@@ -1,0 +1,26 @@
+#root {
+  font-family: var(--bagel);
+  max-width: 1280px;
+  margin: 0 auto;
+ }
+
+.App {
+}   
+
+.navbar {
+  background-color: black;
+  height: 100px;
+  width: 100vw;
+}
+
+.product-card {
+  max-width: 400px;
+  margin: 2rem;
+  display: inline-block;
+}
+
+.jumbotron-content {
+   background: url(/asset-1.png) no-repeat center;
+ height: 450px;
+
+}
