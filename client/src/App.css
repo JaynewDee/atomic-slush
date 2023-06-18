@@ -17,19 +17,20 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 0px 3px 1px rgba(20, 20, 20, .7);
+  box-shadow: 0px 0px 3px 1px rgba(20, 20, 20, 0.7);
   position: relative;
   z-index: 3;
 }
 
-.navbar>a {
+.navbar > a {
   font-size: 1rem;
   margin: 1rem auto;
   text-transform: uppercase;
+  filter: drop-shadow(0px 1px 1px rgba(30, 30, 30, 0.7));
 }
-.navbar>a:hover {
-
+.navbar > a:hover {
   color: #5f4b9f;
+  filter: none;
 }
 .product-card {
   max-width: 400px;
@@ -41,7 +42,7 @@
   background: url(/asset-1.png) no-repeat center white;
   background-size: 150px;
   height: 500px;
-  box-shadow: 0px 0px 9px 1px rgba(20, 20, 20, .3);
+  box-shadow: 0px 0px 9px 1px rgba(20, 20, 20, 0.3);
   transform: translateY(-50px);
 }
 
@@ -54,7 +55,7 @@
     padding-bottom: 1rem;
   }
 
-  .navbar>a {
-    margin: .11rem auto;
+  .navbar > a {
+    margin: 0.11rem auto;
   }
 }
