@@ -2,10 +2,13 @@
   font-family: var(--bagel);
   min-height: 100dvh;
   margin: 0 auto;
+  background: linear-gradient(to bottom, #5f4b9f, #5f4b9f, #5a6eb1, #33c2e4);
   background-color: #5f4b9f;
 }
 
-.App {}
+.App {
+  height: 100%;
+}
 
 .navbar {
   background-color: #33c2e4;
@@ -14,13 +17,15 @@
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0px 0px 6px 15px black;
+  box-shadow: 0px 0px 3px 1px rgba(20, 20, 20, .7);
+  position: relative;
+  z-index: 3;
 }
 
 .navbar>a {
-  font-size: 1.33rem;
+  font-size: 1rem;
   margin: 1rem auto;
-
+  text-transform: uppercase;
 }
 
 .product-card {
@@ -31,8 +36,9 @@
 
 .jumbotron-content {
   background: url(/asset-1.png) no-repeat center white;
-  height: 400px;
-  border-bottom: 3px solid #33c2e4;
+  height: 500px;
+  box-shadow: 0px 0px 9px 1px rgba(20, 20, 20, .3);
+  transform: translateY(-50px);
 }
 
 @media screen and (max-width: 768px) {

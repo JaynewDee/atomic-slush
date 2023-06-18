@@ -1,11 +1,13 @@
-export default function NavbarCTA() {
+import { Link } from "react-router-dom";
+
+export default function Navbar() {
   return (
     <div className="navbar">
-      <a href="/">Home</a>
-      <a href="/services">Services</a>
-      <a href="/products">Products</a>
-      <a href="/about">Who We Are</a>
-      <a href="/quote">Get a Quote</a>
+      <Link to={"/"}>Home</Link>
+      <Link to={"/recipes"}>Recipes</Link>
+      <Link to={"/services"}>Services</Link>
+      <Link to={"/about"}>Who We Are</Link>
+      <Link to={"/quote"}>Get a Quote</Link>
     </div>
 
   );
