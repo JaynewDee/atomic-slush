@@ -9,6 +9,5 @@ export default function Navbar() {
       <Link to={"/about"}>Who We Are</Link>
       <Link to={"/quote"}>Get a Quote</Link>
     </div>
-
   );
 }

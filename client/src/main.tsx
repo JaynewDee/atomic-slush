@@ -6,8 +6,15 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { recipes, RecipeType } from './data/recipes.ts';
+import { About, Services, Recipes, Quote } from './pages';
+import Recipe from './components/Recipe.tsx';
+import { loader as recipeLoader } from './components/Recipe'
 
-import { Home, About, Services, Recipes, Quote } from './pages';
+function recipesLoader(): RecipeType[] {
+  return recipes
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,7 +30,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/recipes",
-        element: <Recipes />
+        element: <Recipes />,
+        loader: recipesLoader,
+        children: [
+          {
+            path: "recipes/:recipeId",
+            element: <Recipe />,
+            loader: recipeLoader
+          }
+        ]
       },
       {
         path: "/quote",

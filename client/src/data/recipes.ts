@@ -1,4 +1,5 @@
-type Recipe = {
+export type RecipeType = {
+    id: number,
     name: string,
     ingredients: Ingredient[]
     frozen: boolean
@@ -18,8 +19,9 @@ type IngredientRecipe = {
     instructions: string[]
 };
 
-const recipes: Recipe[] = [
+export const recipes: RecipeType[] = [
     {
+        id: 1,
         name: "Classic Margarita",
         ingredients: [
             {
@@ -46,6 +48,7 @@ const recipes: Recipe[] = [
         frozen: true
     },
     {
+        id: 2,
         name: "Pina Colada",
         ingredients: [
             {
@@ -76,6 +79,7 @@ const recipes: Recipe[] = [
         frozen: true
     },
     {
+        id: 3,
         name: "Paloma",
         ingredients: [
             {
