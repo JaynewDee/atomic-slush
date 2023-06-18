@@ -1,9 +1,9 @@
-import React from 'react'
 import { useLoaderData } from 'react-router-dom'
 import { RecipeType, recipes } from '../data/recipes'
+import { GiPineapple } from 'react-icons/gi'
 
 export function loader({ params }: any) {
-    return recipes[Number(params.recipeId) - 1]
+    return recipes[Number(params.recipeId) - 1] || recipes[0]
 }
 
 const Recipe = () => {
@@ -11,7 +11,7 @@ const Recipe = () => {
 
     return (
         <div className="recipe-card">
-            <h4 className="recipe-name">{recipe.name}</h4>
+            <h4 className="recipe-name">{recipe.name === "Paloma" ? <><GiPineapple />{recipe.name}</> : recipe.name}</h4>
             <ul className="ingredients-list">
                 {recipe.ingredients.map(ingredient => <li key={ingredient.name}>{ingredient.name}</li>)}
             </ul>

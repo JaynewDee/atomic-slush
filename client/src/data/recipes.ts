@@ -111,7 +111,7 @@ export const recipes: RecipeType[] = [
     }
 ]
 
-const ingredientRecipes: IngredientRecipe[] = [
+const _ingredientRecipes: IngredientRecipe[] = [
     {
         name: "Coconut Cream",
         ingredients: [

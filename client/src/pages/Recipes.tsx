@@ -15,7 +15,7 @@ const RecipeNav = ({ active, setActive }: any) => {
               key={recipe.name}
               className="recipe-nav-item"
               onClick={() => setActive(recipe.name)}
-              style={active === recipe.name ? { color: 'orange', borderLeft: "3px solid orange", paddingLeft: "1rem" } : {}}
+              style={active === recipe.name ? { color: '#5f4b9f', borderLeft: "3px solid orange", paddingLeft: "1rem" } : {}}
             >
               <Link to={`recipes/${recipe.id}`}>{recipe.name}</Link>
             </li>
@@ -35,7 +35,7 @@ const Header = () => {
 }
 
 const Recipes = () => {
-  const [active, setActive] = useState("")
+  const [active, setActive] = useState("Classic Margarita")
   return (
     <>
       <Header />
