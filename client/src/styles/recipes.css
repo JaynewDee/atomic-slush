@@ -14,7 +14,7 @@
 .header-icon-right {
   margin: 0 0.5rem;
   color: var(--ocean);
-  height: 1.5rem;
+  height: 1.33rem;
 }
 .recipes-container {
   width: 75%;
@@ -37,7 +37,7 @@
   font-size: 1rem;
 }
 
-nav {
+.recipe-nav {
   margin-left: auto;
   margin-right: 3rem;
   width: 50%;
@@ -106,5 +106,11 @@ nav {
   }
   .ingredients-list {
     text-align: right;
+  }
+  .ingredients-list {
+    font-size: 1.33rem;
+  }
+  .recipe-name {
+    font-size: 1.66rem;
   }
 }

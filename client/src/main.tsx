@@ -10,6 +10,9 @@ import { recipes, RecipeType } from './data/recipes.ts';
 import { About, Services, Recipes, Quote } from './pages';
 import Recipe from './components/Recipe.tsx';
 import { loader as recipeLoader } from './components/Recipe'
+import Reason from './pages/About/Reason.tsx';
+import People from "./pages/About/People.tsx";
+import Machine from './pages/About/Machine.tsx';
 
 function recipesLoader(): RecipeType[] {
   return recipes
@@ -22,7 +25,21 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/about",
-        element: <About />
+        element: <About />,
+        children: [
+          {
+            path: "about/reason",
+            element: <Reason />
+          },
+          {
+            path: "about/people",
+            element: <People />
+          },
+          {
+            path: "about/machine",
+            element: <Machine />
+          }
+        ]
       },
       {
         path: "/services",

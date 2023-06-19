@@ -9,7 +9,7 @@ const RecipeNav = ({ active, setActive }: any) => {
   const recipes: RecipeType[] = useLoaderData() as RecipeType[];
 
   return (
-    <nav>
+    <nav className="recipe-nav">
       <ul className="recipe-nav-list">
         {recipes.map(recipe => {
           return (

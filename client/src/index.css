@@ -29,6 +29,8 @@
   --darkest: rgba(35, 35, 35, 0.9);
   --ocean: rgba(51, 194, 228, 1);
   --rich-purp: rgba(95, 75, 159, 1);
+  --trans-purp: rgba(95, 75, 159, 0.33);
+  --trans-ocean: rgba(51, 194, 228, 0.33);
   --sand: 'Quicksand', sans-serif;
   --caveat: 'Caveat', cursive;
   --accent: #ff6b6b;

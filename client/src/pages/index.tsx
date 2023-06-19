@@ -1,8 +1,8 @@
 import Home from './Home';
-import About from './About';
+import About from './About/About';
 import Quote from './Quote';
 import Recipes from './Recipes';
-import Services from './Services'; 
+import Services from './Services';
 
 export {
     Home,

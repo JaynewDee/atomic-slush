@@ -1,0 +1,50 @@
+.about-section {
+  height: 600px;
+  text-align: center;
+  font-family: var(--caveat);
+  box-shadow: inset 0 0 9px 1px rgba(10, 10, 10, 1);
+}
+
+.about-nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 6rem auto 2rem;
+  font-size: 2rem;
+  max-width: 920px;
+  font-family: var(--caveat);
+}
+
+.about-nav > a {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2rem;
+  width: 25%;
+}
+
+.about-nav > a > svg {
+  transition: all 1s;
+}
+
+.machine-section {
+  font-size: 1.66rem;
+  line-height: 1.33;
+  width: 66%;
+  margin: auto;
+  padding-top: 6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about-nav {
+    flex-flow: column nowrap;
+  }
+  .about-nav > a {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 33%;
+    margin: auto;
+  }
+}

@@ -68,7 +68,7 @@
 .logo-img {
   height: 350px;
   margin-bottom: 5rem;
-  filter: drop-shadow(0 9px 3px rgba(25, 25, 25, 0.4));
+  filter: drop-shadow(0 12px 3px rgba(25, 25, 25, 0.4));
   image-rendering: crisp-edges;
 }
 
@@ -80,7 +80,7 @@
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  width: 33%;
+  width: 37%;
   margin: 3rem auto 7rem;
 }
 
@@ -129,5 +129,8 @@
   }
   .note-container {
     width: 90%;
+  }
+  .logo-img {
+    margin-bottom: 2rem;
   }
 }
