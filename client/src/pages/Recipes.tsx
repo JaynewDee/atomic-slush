@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link, Outlet, useLoaderData } from 'react-router-dom'
 import { RecipeType } from '../data/recipes';
 import "../styles/recipes.css"
+import { SectionHeader } from '../components/Section';
+import Note from '../components/Note';
 
 const RecipeNav = ({ active, setActive }: any) => {
   const recipes: RecipeType[] = useLoaderData() as RecipeType[];
@@ -14,10 +16,11 @@ const RecipeNav = ({ active, setActive }: any) => {
             <li
               key={recipe.name}
               className="recipe-nav-item"
-              onClick={() => setActive(recipe.name)}
-              style={active === recipe.name ? { color: '#5f4b9f', borderLeft: "3px solid orange", paddingLeft: "1rem" } : {}}
+              style={active === recipe.name ? { color: '#33c2e4', borderLeft: "3px solid var(--orange)", paddingLeft: "1rem" } : {}}
             >
-              <Link to={`recipes/${recipe.id}`}>{recipe.name}</Link>
+              <Link
+                onClick={() => setActive(recipe.name)}
+                to={`recipes/${recipe.id}`}>{recipe.name}</Link>
             </li>
           )
         })}
@@ -26,23 +29,16 @@ const RecipeNav = ({ active, setActive }: any) => {
   )
 }
 
-const Header = () => {
-  return (
-    <header className="recipes-header">
-      <h3>RECIPES</h3>
-    </header>
-  )
-}
-
 const Recipes = () => {
   const [active, setActive] = useState("Classic Margarita")
   return (
     <>
-      <Header />
+      <SectionHeader />
       <article className="recipes-container">
         <RecipeNav active={active} setActive={setActive} />
         <Outlet />
       </article>
+      <Note />
     </>
   )
 }

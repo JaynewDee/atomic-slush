@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,10 +16,25 @@
 :root {
   line-height: 1.5;
   font-weight: 400;
-  --bagel: "Bagel Fat One", cursive;
+  --bagel: 'Bagel Fat One', cursive;
+  --fam-main: '';
+  --fam-sub: '';
+  --grandi: 'Grandiflora One', serif;
+  --josefin: 'Josefin Sans', sans-serif;
+  --jost: 'Jost', sans-serif;
+  --karla: 'Karla', sans-serif;
+  --lilita: 'Lilita One', cursive;
+  --concert: 'Concert One', cursive;
+  --lightest: rgba(250, 249, 246, 1);
+  --darkest: rgba(35, 35, 35, 0.9);
+  --ocean: rgba(51, 194, 228, 1);
+  --rich-purp: rgba(95, 75, 159, 1);
+  --sand: 'Quicksand', sans-serif;
+  --caveat: 'Caveat', cursive;
+  --accent: #ff6b6b;
+  --orange: rgba(224, 54, 22, 1);
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: white;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

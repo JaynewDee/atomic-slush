@@ -108,6 +108,56 @@ export const recipes: RecipeType[] = [
             },
         ],
         frozen: true
+    },
+    {
+        id: 4,
+        name: "Strawberry Daiquiri",
+        ingredients: [
+            {
+                name: "Rum",
+                volume_liters: 2.04
+            },
+            {
+                name: "Strawberry Cordial",
+                volume_liters: 2.04
+            },
+            {
+                name: "Lime",
+                volume_liters: 0.69
+            },
+            {
+                name: "Simple Syrup",
+                volume_liters: 1.03
+            },
+            {
+                name: "Water",
+                volume_liters: 2.3
+            }
+        ],
+        frozen: true
+    },
+    {
+        id: 5,
+        name: "Whiskey & Coke",
+        ingredients: [
+            {
+                name: "Whiskey",
+                volume_liters: 3,
+            },
+            {
+                name: "Coke",
+                volume_liters: 1
+            },
+            {
+                name: "Lime",
+                volume_liters: 1
+            },
+            {
+                name: "Water",
+                volume_liters: 5
+            }
+        ],
+        frozen: true
     }
 ]
 

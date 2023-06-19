@@ -11,7 +11,11 @@ const Recipe = () => {
 
     return (
         <div className="recipe-card">
-            <h4 className="recipe-name">{recipe.name === "Paloma" ? <><GiPineapple />{recipe.name}</> : recipe.name}</h4>
+            <h4 className="recipe-name">
+                {/* <span>{"("}</span> */}
+                {recipe.name}
+                {/* <span>{")"}</span> */}
+            </h4>
             <ul className="ingredients-list">
                 {recipe.ingredients.map(ingredient => <li key={ingredient.name}>{ingredient.name}</li>)}
             </ul>
