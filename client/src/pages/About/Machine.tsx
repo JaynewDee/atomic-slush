@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Machine = () => {
     return (
         <div className="machine-section">

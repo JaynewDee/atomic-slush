@@ -4,10 +4,12 @@ import logoImg from '/asset-1.png'
 
 const NavLink = (path: string, activeView: string, viewSetter: any) =>
   <Link
+    key={path}
     to={path === "recipes" ? `/${path}/${path}/1` : `/${path}`}
     className={path}
     style={activeView === path ? { color: "var(--rich-purp)" } : {}}
-    onClick={() => viewSetter(path)}>
+    onClick={() => viewSetter(path)}
+  >
     {path === "about" ? "Who We Are" : path === "quote" ? "Grab A Quote" : path}
   </Link>
 
