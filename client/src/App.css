@@ -21,9 +21,10 @@
 
 .navbar {
   background: radial-gradient(white, var(--ocean));
+  border-bottom: 0.75rem solid var(--rich-purp);
 
-  /* background-color: rgba(51, 194, 228, 1); */
   display: flex;
+
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
@@ -48,7 +49,7 @@
   text-align: center;
   font-size: 1.33rem;
   width: 12rem;
-  /* filter: drop-shadow(0 1px 1px rgba(25, 25, 25, 0.3)); */
+  filter: drop-shadow(0 3px 1px rgba(25, 25, 25, 0.3));
   position: sticky;
   top: 0;
 }
@@ -68,7 +69,7 @@
 .logo-img {
   height: 350px;
   margin-bottom: 5rem;
-  filter: drop-shadow(0 12px 3px rgba(25, 25, 25, 0.4));
+  filter: drop-shadow(0 3px 9px rgba(25, 25, 25, 0.6));
   image-rendering: crisp-edges;
 }
 
@@ -98,6 +99,7 @@
   color: var(--lightest);
   font-family: var(--caveat);
   box-shadow: 0 -3px 15px 1px rgba(25, 25, 25, 0.7);
+  margin-top: 3rem;
 }
 
 .disclaimer-text {
