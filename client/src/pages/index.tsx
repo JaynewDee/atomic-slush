@@ -1,7 +1,7 @@
 import Home from './Home';
 import About from './About/About';
-import Quote from './Quote';
-import Recipes from './Recipes';
+import Quote from './Quote/Quote';
+import Recipes from './Recipes/Recipes';
 import Services from './Services';
 
 export {

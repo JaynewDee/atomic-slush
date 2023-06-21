@@ -9,7 +9,7 @@ type NavProps = {
 }
 
 const AboutNav = ({ displayState, setDisplayState }: NavProps) => {
-    const sections = [{ name: "reason", text: "The Reason", icon: Heart }, { name: "people", text: "The People", icon: People }, { name: "machine", text: "The Machine", icon: Machine }]
+    const sections = [{ name: "reason", text: "The Mission", icon: Heart }, { name: "people", text: "The People", icon: People }, { name: "machine", text: "The Machine", icon: Machine }]
     return (
         <nav className="about-nav">
             {sections.map(({ name, text, icon }) =>
@@ -18,7 +18,7 @@ const AboutNav = ({ displayState, setDisplayState }: NavProps) => {
                     key={name}
                 >
                     {icon({ color: name === displayState ? "var(--orange)" : "var(--lightest)" })}
-                    <span style={name === displayState ? { marginTop: ".66rem", color: "var(--ocean)" } : { marginTop: ".66rem" }}>{text}
+                    <span style={name === displayState ? { color: "var(--ocean)" } : {}}>{text}
                     </span>
                 </Link>
             )}

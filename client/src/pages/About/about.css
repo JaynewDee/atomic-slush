@@ -8,7 +8,6 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  margin: auto;
   margin: 6rem auto 2rem;
   font-size: 2rem;
   max-width: 920px;
@@ -20,7 +19,6 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem 2rem;
   width: 25%;
 }
 
@@ -28,8 +26,11 @@
   transition: all 1s;
 }
 
+.about-nav > a > span {
+  margin-top: 0.66rem;
+}
 .machine-section {
-  font-size: 1.66rem;
+  font-size: 1.33rem;
   font-family: var(--concert);
   line-height: 1.33;
   width: 66%;
@@ -48,10 +49,15 @@
   .about-nav {
     flex-flow: column nowrap;
   }
+
   .about-nav > a {
-    flex-flow: row nowrap;
+    flex-flow: row-reverse nowrap;
     justify-content: space-between;
+    height: 5rem;
     width: 33%;
     margin: auto;
+  }
+  .about-nav > a > span {
+    margin-top: 0rem;
   }
 }

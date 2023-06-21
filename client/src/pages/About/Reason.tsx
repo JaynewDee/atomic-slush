@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Reason = () => {
+const Mission = () => {
     return (
-        <div>Reason</div>
+        <div>Mission</div>
     )
 }
 
-export default Reason
+export default Mission; 

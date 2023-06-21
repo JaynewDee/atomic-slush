@@ -5,7 +5,7 @@ import logoImg from '/asset-1.png'
 const NavLink = (path: string, activeView: string, viewSetter: any) =>
   <Link
     key={path}
-    to={path === "recipes" ? `/${path}/${path}/1` : `/${path}`}
+    to={path === "recipes" ? `/${path}/${path}/1` : path === "about" ? `/${path}/${path}/reason` : `/${path}`}
     className={path}
     style={activeView === path ? { color: "var(--rich-purp)" } : {}}
     onClick={() => viewSetter(path)}
@@ -14,7 +14,8 @@ const NavLink = (path: string, activeView: string, viewSetter: any) =>
   </Link>
 
 export default function Navbar() {
-  const [activeView, setActiveView] = useState("")
+  const [activeView, setActiveView] = useState("");
+
   return (
     <div className="navbar">
       <img src={logoImg} className="logo-img"></img>
