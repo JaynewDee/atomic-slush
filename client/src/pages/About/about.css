@@ -8,7 +8,7 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  margin: 6rem auto 2rem;
+  margin: 5rem auto 3rem;
   font-size: 2rem;
   max-width: 920px;
   font-family: var(--caveat);
@@ -29,11 +29,17 @@
 .about-nav > a > span {
   margin-top: 0.66rem;
 }
+
+.about-section {
+  min-height: 66dvh;
+}
+
 .machine-section {
   font-size: 1.33rem;
   font-family: var(--concert);
   line-height: 1.33;
   width: 66%;
+  max-width: 720px;
   margin: auto;
   padding: 5rem 2rem;
 }
@@ -45,6 +51,7 @@
 .machine-section > span {
   color: var(--orange);
 }
+
 @media screen and (max-width: 768px) {
   .about-nav {
     flex-flow: column nowrap;
@@ -53,11 +60,16 @@
   .about-nav > a {
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
-    height: 5rem;
-    width: 33%;
+    height: 3rem;
+    width: 50%;
     margin: auto;
   }
+
   .about-nav > a > span {
     margin-top: 0rem;
+  }
+
+  .machine-section {
+    width: 90%;
   }
 }

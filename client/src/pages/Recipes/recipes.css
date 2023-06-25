@@ -99,6 +99,7 @@
 @media screen and (max-width: 768px) {
   .recipes-container {
     width: 100%;
+    border-radius: 0;
     max-width: unset;
   }
   .recipe-name {

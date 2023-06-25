@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 import "./about.css"
 
 const About = () => {
-  const [displayState, setDisplayState] = useState("")
+  const [displayState, setDisplayState] = useState("reason")
 
   return (
     <div className="about-page">

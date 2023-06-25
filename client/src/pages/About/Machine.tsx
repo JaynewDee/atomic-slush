@@ -12,12 +12,9 @@ const Machine = () => {
             </p>
             <span>~</span>
             <p>
-                {"The total of frozen beverages served will be roughly 70 9oz. drinks. This is ideal for parties of about 25 to 30 guests."}
+                {"The total of frozen beverages served will be roughly 70 9oz. drinks. This is ideal for parties of about 25 to 30 guests, and additional mixes may be purchased for larger parties."}
             </p>
-            <span>~</span>
-            <p>
-                {" Additional mixes may be purchased for larger parties."}
-            </p>
+
             <span>~</span>
         </div>
     )

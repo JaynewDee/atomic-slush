@@ -1,9 +1,8 @@
 import { Outlet } from "react-router-dom";
-import { useState } from 'react';
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Strip from "./components/Strip";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (

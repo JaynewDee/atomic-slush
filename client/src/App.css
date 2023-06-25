@@ -1,5 +1,5 @@
 #root {
-  font-family: var(--concert);
+  font-family: var(--lilita);
 }
 
 .banner-strip {
@@ -22,9 +22,7 @@
 .navbar {
   background: radial-gradient(white, var(--ocean));
   border-bottom: 0.75rem solid var(--rich-purp);
-
   display: flex;
-
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
@@ -47,13 +45,11 @@
 
 .nav-links-container > a {
   text-align: center;
-  font-size: 1.66rem;
+  font-size: 1.33rem;
   width: 12rem;
   filter: drop-shadow(0 3px 1px rgba(25, 25, 25, 0.3));
   position: sticky;
   top: 0;
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--rich-purp); */
   color: var(--lightest);
 }
 
@@ -118,6 +114,7 @@
   font-size: 0.8rem;
   border-top: 2px solid white;
 }
+
 @media screen and (max-width: 768px) {
   .navbar {
     flex-flow: column nowrap;

@@ -1,0 +1,32 @@
+.main-footer {
+  background-color: var(--rich-purp);
+  color: var(--lightest);
+  font-family: var(--caveat);
+  box-shadow: 0 -3px 15px 1px rgba(25, 25, 25, 0.7);
+  margin-top: 3rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.social-links > a {
+  margin: 0 0.11rem;
+}
+
+.disclaimer-text {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.disclaimer-text > p {
+  flex: 1 0 30%;
+  text-align: center;
+  padding: 1rem;
+  text-indent: 1rem;
+  font-size: 0.8rem;
+  border-top: 2px solid white;
+}
