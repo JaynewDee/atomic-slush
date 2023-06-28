@@ -14,9 +14,7 @@ import Reason from './pages/About/Reason.tsx';
 import People from "./pages/About/People.tsx";
 import Machine from './pages/About/Machine.tsx';
 
-function recipesLoader(): RecipeType[] {
-  return recipes
-}
+const recipesLoader = (): RecipeType[] => recipes;
 
 const router = createBrowserRouter([
   {

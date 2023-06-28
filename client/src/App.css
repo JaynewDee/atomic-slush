@@ -1,21 +1,13 @@
+* {
+  text-decoration: none;
+}
+
 #root {
   font-family: var(--lilita);
 }
 
-.banner-strip {
-  background-color: var(--lightest);
-  color: var(--darkest);
-  font-family: var(--caveat);
-  text-align: center;
-  margin-top: 1.5rem;
-  letter-spacing: 2px;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.App {
+body {
+  margin: 0;
 }
 
 .navbar {
@@ -65,14 +57,15 @@
 }
 
 .logo-img {
-  height: 300px;
+  height: 333px;
   margin-bottom: 5rem;
   filter: drop-shadow(0 3px 9px rgba(25, 25, 25, 0.6));
   image-rendering: crisp-edges;
 }
 
 .page-container {
-  min-height: 66dvh;
+  margin-top: 3rem;
+  min-height: 33dvh;
 }
 
 .note-container {

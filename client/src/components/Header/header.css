@@ -1,0 +1,49 @@
+.tip-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(28, 28, 28, 1);
+}
+
+.tip-top > p {
+  font-size: 2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.66rem 2rem;
+}
+
+.social-links > a {
+  margin: 0 0.33rem;
+}
+
+.social-icon {
+  transition: all 0.33s;
+}
+
+.social-icon:hover {
+  color: var(--orange);
+  transform: scale(1.1);
+}
+
+.strip {
+  background-color: var(--lightest);
+  color: var(--darkest);
+  font-family: var(--caveat);
+  text-align: center;
+  letter-spacing: 2px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  justify-content: center;
+}

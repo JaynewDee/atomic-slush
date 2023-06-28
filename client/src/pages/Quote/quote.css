@@ -2,3 +2,15 @@
   display: flex;
   flex-flow: column nowrap;
 }
+
+#embedded-form-frame {
+  font-family: monospace;
+  margin: auto;
+  height: 33dvh;
+  width: 33dvw;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}

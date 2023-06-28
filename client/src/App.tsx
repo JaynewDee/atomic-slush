@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Strip from "./components/Strip";
 import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <Strip />
+      <Header />
       <Navbar />
       <main className="page-container">
         <Outlet />

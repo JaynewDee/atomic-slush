@@ -1,6 +1,6 @@
 const Strip = () => {
     return (
-        <header className="banner-strip">
+        <header className="strip">
             <p>Refreshing the great DFW metroplex since 2023</p>
         </header>
     )
