@@ -13,11 +13,11 @@ type Ingredient = {
     weight?: number
 }
 
-type IngredientRecipe = {
-    name: string,
-    ingredients: Ingredient[],
-    instructions: string[]
-};
+// type IngredientRecipe = {
+//     name: string,
+//     ingredients: Ingredient[],
+//     instructions: string[]
+// };
 
 export const recipes: RecipeType[] = [
     {
