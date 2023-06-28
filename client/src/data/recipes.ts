@@ -161,35 +161,35 @@ export const recipes: RecipeType[] = [
     }
 ]
 
-const _ingredientRecipes: IngredientRecipe[] = [
-    {
-        name: "Coconut Cream",
-        ingredients: [
-            {
-                name: "Coconut Milk",
-                volume_cups: 24
-            },
-            {
-                name: "Desiccated Coconut",
-                volume_cups: 12
-            },
-            {
-                name: "Turbinado",
-                volume_cups: 28
-            },
-            {
-                name: "Water",
-                volume_cups: 4
-            }
-        ],
-        instructions: [
-            "Bring coconut milk, water, sugar and desiccated coconut to a boil in saucepan.",
-            "Simmer on low/medium heat for 15 minutes, stirring consistently to ensure all sugar is dissolved and not burning on the bottom of the pot.",
-            "Remove from heat.",
-            "Add mixture in increments to a blender and blend.",
-            "Strain mixture through fine sieve and press to extract all liquid.",
-            "Repeat until all liquid has been used.",
-            "Store, refridgerated, until use."
-        ]
-    }
-]
+// const ingredientRecipes: IngredientRecipe[] = [
+//     {
+//         name: "Coconut Cream",
+//         ingredients: [
+//             {
+//                 name: "Coconut Milk",
+//                 volume_cups: 24
+//             },
+//             {
+//                 name: "Desiccated Coconut",
+//                 volume_cups: 12
+//             },
+//             {
+//                 name: "Turbinado",
+//                 volume_cups: 28
+//             },
+//             {
+//                 name: "Water",
+//                 volume_cups: 4
+//             }
+//         ],
+//         instructions: [
+//             "Bring coconut milk, water, sugar and desiccated coconut to a boil in saucepan.",
+//             "Simmer on low/medium heat for 15 minutes, stirring consistently to ensure all sugar is dissolved and not burning on the bottom of the pot.",
+//             "Remove from heat.",
+//             "Add mixture in increments to a blender and blend.",
+//             "Strain mixture through fine sieve and press to extract all liquid.",
+//             "Repeat until all liquid has been used.",
+//             "Store, refridgerated, until use."
+//         ]
+//     }
+// ]

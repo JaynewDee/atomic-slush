@@ -1,6 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
 import { RecipeType, recipes } from '../../data/recipes'
-import { GiPineapple } from 'react-icons/gi'
 
 export function loader({ params }: any) {
     return recipes[Number(params.recipeId) - 1] || recipes[0]

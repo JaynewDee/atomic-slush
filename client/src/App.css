@@ -16,7 +16,6 @@
 }
 
 .App {
-  /* height: 100dvh; */
 }
 
 .navbar {
@@ -91,28 +90,6 @@
 }
 
 .note-container > p {
-}
-
-.main-footer {
-  background-color: var(--rich-purp);
-  color: var(--lightest);
-  font-family: var(--caveat);
-  box-shadow: 0 -3px 15px 1px rgba(25, 25, 25, 0.7);
-  margin-top: 3rem;
-}
-
-.disclaimer-text {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.disclaimer-text > p {
-  flex: 1 0 30%;
-  text-align: center;
-  padding: 1rem;
-  text-indent: 1rem;
-  font-size: 0.8rem;
-  border-top: 2px solid white;
 }
 
 @media screen and (max-width: 768px) {
