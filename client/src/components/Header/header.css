@@ -7,11 +7,16 @@
   z-index: 10;
   width: 100%;
   background-color: rgba(28, 28, 28, 1);
+  border-left: 2px solid var(--ocean);
+  border-right: 2px solid var(--ocean);
+  border-bottom: 2px solid var(--rich-purp);
+  font-family: var(--lucky);
 }
 
 .tip-top > p {
-  font-size: 2rem;
+  font-size: 2.33rem;
   margin-left: 2rem;
+  line-height: 1;
   cursor: pointer;
 }
 
@@ -27,7 +32,7 @@
 }
 
 .social-icon {
-  transition: all 0.33s;
+  transition: all 0.11s;
 }
 
 .social-icon:hover {
@@ -44,6 +49,9 @@
   height: 2rem;
   display: flex;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 3.33rem;
+  border-top: 2px solid var(--ocean);
+
+  border-bottom: 2px solid var(--ocean);
   justify-content: center;
 }
