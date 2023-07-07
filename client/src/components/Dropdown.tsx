@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./dropdown.css"
 import Social from './Header/Social'
 
@@ -29,6 +29,20 @@ const botCollapse = {
 
 export const Dropdown = () => {
   const [menuState, setMenuState] = useState(false);
+
+  useEffect(() => {
+    function handleClickOff(e: any) {
+      const targetClass = e.target.classList[0];
+      const targetClasses = ['App', 'navbar', 'page-container', 'tip-top', 'logo-img']
+      if (targetClasses.includes(targetClass)) {
+        setMenuState(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOff)
+
+    return () => document.removeEventListener('click', handleClickOff)
+  }, [])
 
   const toggleMenu = () => setMenuState(prev => !prev)
 
