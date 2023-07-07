@@ -10,10 +10,10 @@ const NavLink = (path: string, activeView: string, viewSetter: any) =>
     key={path}
     to={pathSwitch(path)}
     className={path}
-    style={activeView === path ? { color: "var(--rich-purp)" } : {}}
+    style={activeView === path ? { color: "var(--rich-purp)", padding: "0" } : {}}
     onClick={() => viewSetter(path)}
   >
-    {path === "about" ? "Who We Are" : path === "quote" ? "Grab A Quote" : path}
+    {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : path}
   </Link>
 
 export default function Navbar() {

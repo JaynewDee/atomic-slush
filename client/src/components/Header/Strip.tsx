@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Strip = () => {
     return (
         <header className="strip">

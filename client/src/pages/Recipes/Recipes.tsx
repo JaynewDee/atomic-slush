@@ -29,7 +29,7 @@ const RecipeNav = ({ active, setActive }: any) => {
   )
 }
 
-const Recipes = () => {
+export const Recipes = () => {
   const [active, setActive] = useState("Classic Margarita")
   return (
     <>
@@ -43,4 +43,4 @@ const Recipes = () => {
   )
 }
 
-export default Recipes
+

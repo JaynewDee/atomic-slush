@@ -1,15 +1,16 @@
+import { Link } from 'react-router-dom';
+import { Dropdown } from '../Dropdown';
 import Social from './Social'
-import Strip from './Strip'
 import "./header.css";
 
 const Header = () => {
     return (
         <section className="header-section">
             <div className="tip-top">
-                <p>ATOMIC</p>
-                <Social />
+                <Link to={"/"}>ATOMIC</Link>
+
+            <Dropdown />
             </div>
-            <Strip />
         </section>
     )
 }

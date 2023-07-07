@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { recipes, RecipeType } from './data/recipes.ts';
-import { About, Services, Recipes, Quote, Home } from './pages';
+import { About, Recipes, Quote, Home } from './pages';
 import Recipe from './pages/Recipes/Recipe.tsx';
 import { loader as recipeLoader } from './pages/Recipes/Recipe.tsx'
 import Reason from './pages/About/Reason.tsx';
@@ -43,10 +43,7 @@ const router = createBrowserRouter([
           }
         ]
       },
-      {
-        path: "/services",
-        element: <Services />
-      },
+      
       {
         path: "/recipes",
         element: <Recipes />,

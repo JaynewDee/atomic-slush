@@ -1,6 +1,9 @@
+import { Dropdown } from "../../components/Dropdown";
+
 const Mission = () => {
     return (
-        <div>Mission</div>
+        <div>
+        </div>
     )
 }
 

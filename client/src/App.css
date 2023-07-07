@@ -11,15 +11,15 @@ body {
 }
 
 .navbar {
-  background: radial-gradient(white, var(--ocean));
+  background: radial-gradient(white, var(--ocean), var(--ocean));
   border-bottom: 0.75rem solid var(--rich-purp);
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
   z-index: 3;
   text-transform: uppercase;
   filter: saturate(1.1);
@@ -36,12 +36,18 @@ body {
 
 .nav-links-container > a {
   text-align: center;
-  font-size: 1.33rem;
-  width: 12rem;
-  filter: drop-shadow(0 3px 1px rgba(25, 25, 25, 0.3));
-  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 9rem;
+  height: 50%;
+  filter: drop-shadow(0 1px 1px rgba(25, 25, 25, 0.31));
   top: 0;
   color: var(--lightest);
+  border-left: 3px solid white;
+  border-radius: 25%;
+  border-right: 3px solid white;
 }
 
 .nav-links-container > a:hover {
@@ -52,6 +58,7 @@ body {
 .recipes {
   transform: translateY(-66px);
 }
+
 .quote {
   transform: translateY(-66px);
 }
@@ -59,9 +66,11 @@ body {
 .logo-img {
   height: 333px;
   margin-bottom: 5rem;
-  filter: drop-shadow(0 3px 9px rgba(25, 25, 25, 0.6));
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.3))
+    drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.1));
   image-rendering: crisp-edges;
 }
+
 
 .page-container {
   margin-top: 3rem;
