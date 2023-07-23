@@ -50,16 +50,6 @@ const About = () => {
         <section ref={ref2} className="images-container">
           <p>{"<PHOTOS HERE>"}</p>
         </section>
-      </div>
-      <div className="about-section">
-        <h2 className="about-section-header">
-          {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
-          <span style={is3Visible ? visibleStyles : invisStyles}>Our Mission
-          </span>
-        </h2>
-        <section ref={ref3} className="images-container">
-          <p >{"<PHOTOS HERE>"}</p>
-        </section>
         <section className="about-section-content">
           <p>
             Our top-of-the-line double-headed machine boasts two 10-liter tanks, giving you the freedom
@@ -74,10 +64,17 @@ const About = () => {
             and we will readily provide a complimentary one for your convenience.
           </p>
         </section>
-
       </div>
-
-
+      <div className="about-section">
+        <h2 className="about-section-header">
+          {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
+          <span style={is3Visible ? visibleStyles : invisStyles}>Our Mission
+          </span>
+        </h2>
+        <section ref={ref3} className="images-container">
+          <p >{"<PHOTOS HERE>"}</p>
+        </section>
+      </div>
     </div>
   )
 }

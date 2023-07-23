@@ -28,22 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-        // children: [
-        //          {
-        //path: "about/reason",
-        //element: <Reason />
-        //},
-        //{
-        //path: "about/people",
-        //element: <People />
-        //},
-        //{
-        //path: "about/machine",
-        //element: <Machine />
-        //}
-        //]
       },
-
       {
         path: "/recipes",
         element: <Recipes />,
