@@ -11,7 +11,7 @@
   border-left: 2px solid var(--ocean);
   border-right: 2px solid var(--ocean);
   font-family: var(--lucky);
-  box-shadow: 0 1px 5px 1px rgba(5, 5, 5, .7);
+  box-shadow: 0 0px 9px 1px rgba(5, 5, 5, .7);
 }
 
 .tip-top > a {
@@ -19,22 +19,6 @@
   margin: .66rem 0 .66rem 2rem;
   line-height: 1;
   cursor: pointer;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.66rem 2rem;
-  margin: auto auto 0;
-}
-
-.social-links > a {
-  margin: 0 0.33rem;
-}
-
-.social-icon {
-  transition: all 0.11s;
 }
 
 .social-icon:hover {

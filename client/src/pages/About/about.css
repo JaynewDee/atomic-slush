@@ -1,36 +1,25 @@
 .about-section {
   text-align: center;
   font-family: var(--caveat);
-  box-shadow: inset 0 0 3px 1px rgba(10, 10, 10, 1);
-  min-height: 50dvh;
-}
+ margin: 6rem 13%;
+ min-height: 33dvh;
+ }
 
-.about-nav {
-  text-align: center;
+.about-section-header {
   display: flex;
-  justify-content: center;
-  margin: 5rem auto 3rem;
-  font-size: 2rem;
-  max-width: 920px;
-  font-family: var(--caveat);
-}
-
-.about-nav > a {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 25%;
+   font-size: 2rem;
 }
 
-.about-nav > a > svg {
-  transition: all 1s;
+.about-section-content {
+  font-size: 1.33rem;
 }
 
-.about-nav > a > span {
-  margin-top: 0.66rem;
+.about-section-content > p {
+  width: 90%;
+  margin: 1.66rem auto;
 }
-
 .machine-section {
   font-size: 1.33rem;
   font-family: var(--concert);
@@ -49,6 +38,8 @@
   color: var(--orange);
 }
 
+.about-icon {
+}
 @media screen and (max-width: 768px) {
   .about-nav {
     flex-flow: column nowrap;

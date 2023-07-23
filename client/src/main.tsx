@@ -10,9 +10,9 @@ import { recipes, RecipeType } from './data/recipes.ts';
 import { About, Recipes, Quote, Home } from './pages';
 import Recipe from './pages/Recipes/Recipe.tsx';
 import { loader as recipeLoader } from './pages/Recipes/Recipe.tsx'
-import Reason from './pages/About/Reason.tsx';
-import People from "./pages/About/People.tsx";
-import Machine from './pages/About/Machine.tsx';
+//import Reason from './pages/About/Reason.tsx';
+//import People from "./pages/About/People.tsx";
+//import Machine from './pages/About/Machine.tsx';
 
 const recipesLoader = (): RecipeType[] => recipes;
 
@@ -28,22 +28,22 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
-        children: [
-          {
-            path: "about/reason",
-            element: <Reason />
-          },
-          {
-            path: "about/people",
-            element: <People />
-          },
-          {
-            path: "about/machine",
-            element: <Machine />
-          }
-        ]
+        // children: [
+        //          {
+        //path: "about/reason",
+        //element: <Reason />
+        //},
+        //{
+        //path: "about/people",
+        //element: <People />
+        //},
+        //{
+        //path: "about/machine",
+        //element: <Machine />
+        //}
+        //]
       },
-      
+
       {
         path: "/recipes",
         element: <Recipes />,

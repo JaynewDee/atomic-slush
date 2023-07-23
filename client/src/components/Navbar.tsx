@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 import { Link } from "react-router-dom";
 import logoImg from '/asset-1.png'
 
 const pathSwitch = (path: string) =>
-  path === "recipes" ? `/${path}/${path}/1` : path === "about" ? `/${path}/${path}/reason` : `/${path}`;
+  path === "recipes" ? `/${path}/${path}/1` : path === "about" ? `/${path}` : `/${path}`;
 
 const NavLink = (path: string, activeView: string, viewSetter: any) =>
   <Link
@@ -16,17 +16,23 @@ const NavLink = (path: string, activeView: string, viewSetter: any) =>
     {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : path}
   </Link>
 
-export default function Navbar() {
-  const [activeView, setActiveView] = useState("");
+export const Links = (activeView: string, setActiveView: Dispatch<SetStateAction<string>>) => {
+  return ["recipes", "about", "quote"]
+    .map(path => NavLink(path, activeView, setActiveView))
+}
+
+export type NavProps = {
+  activeView: string,
+  setActiveView: Dispatch<SetStateAction<string>>;
+}
+
+export function Navbar({ activeView, setActiveView }: NavProps) {
 
   return (
     <div className="navbar">
       <img src={logoImg} className="logo-img"></img>
       <div className="nav-links-container">
-        {
-          ["recipes", "about", "quote"]
-            .map(path => NavLink(path, activeView, setActiveView))
-        }
+        {Links(activeView, setActiveView)}
       </div>
     </div>
   );
