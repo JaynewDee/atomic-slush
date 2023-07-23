@@ -18,8 +18,7 @@ body {
   justify-content: space-around;
   align-items: center;
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: -1rem;
+  padding-top: 8rem;
   z-index: 3;
   text-transform: uppercase;
   filter: saturate(1.1);
@@ -30,32 +29,38 @@ body {
   justify-content: center;
   flex-flow: row wrap;
   width: 80%;
-  margin: 0.11rem auto;
+  margin: 1rem auto 3rem;
   height: 5rem;
-}
+ }
 
 .nav-links-container > a {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
-  width: 9rem;
-  height: 50%;
+  font-size: 1.2rem;
+  height: 33%;
+  width: 5.3rem;
   filter: drop-shadow(0 1px 1px rgba(25, 25, 25, 0.31));
   top: 0;
   color: var(--lightest);
-  border-left: 3px solid white;
-  border-radius: 25%;
-  border-right: 3px solid white;
+  border-left: 3px solid var(--rich-purp);
+  border-radius: 15%;
+  border-right: 3px solid var(--rich-purp);
+  margin: 1rem;
+  line-height: 1.1;
+  transition: all .1s;
 }
 
+.nav-links-container > a > * {
+  z-index: -1;
+}
 .nav-links-container > a:hover {
   color: var(--lightest);
   filter: none;
 }
 
-.recipes {
+.about {
   transform: translateY(-66px);
 }
 
@@ -64,10 +69,9 @@ body {
 }
 
 .logo-img {
-  height: 333px;
+  height: 350px;
   margin-bottom: 5rem;
-  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.3))
-    drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.3)) saturate(1.4);
   image-rendering: crisp-edges;
 }
 
@@ -102,16 +106,16 @@ body {
   .nav-links-container {
     display: flex;
     flex-flow: column nowrap;
-    margin-bottom: 1rem;
+    align-items: center;
   }
   .nav-links-container > a {
     transform: none;
-    margin: 0 auto;
   }
+  
   .note-container {
     width: 90%;
   }
   .logo-img {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 }

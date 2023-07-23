@@ -18,24 +18,26 @@
   transition: all .33s;
   border-radius: 0 0 0 6px;
   box-shadow: 0px 0px 12px 1px rgba(5, 5, 5, .4);
-  transform: unset;
-}
-
-.burger-menu-container > .social-links {
-  font-size: 1.33rem;
-  width: 100%;
-  transform: unset;
-  text-align: right;
 }
 
 #burger-nav-links {
   display: flex;
   flex-flow: column nowrap;
-  transform: unset;
+  align-items: flex-end;
+  margin: 33% 2rem auto;
+  font-size: 1.33rem;
 }
 
 #burger-nav-links > a {
-  font-size: 1rem;
+  margin-bottom: 1rem;
+  transform: unset;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+  width: 66%;
 }
 
 .burger-line {
@@ -49,7 +51,6 @@
 #burger-line-top {
   border-left: 3px solid white;
 }
-
 
 @keyframes top-collapse {
   0% {

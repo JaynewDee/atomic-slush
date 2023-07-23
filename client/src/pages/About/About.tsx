@@ -11,7 +11,7 @@ const About = () => {
   const is3Visible = useIsVisible(ref3)
 
   const visibleStyles = {
-    color: "var(--ocean)", transition: "all 3s", width: "100%", borderBottom: "1px solid white", borderTop: "1px solid var(--orange)", borderRadius: "1rem"
+    color: "var(--ocean)", transition: "all 3s", width: "100%", borderBottom: "1px solid white", borderTop: "none"
   }
   const invisStyles = { color: "white", transition: "all 3s", width: "33%", borderBottom: "0px solid white", borderRadius: "0rem" }
   return (
@@ -23,8 +23,8 @@ const About = () => {
           <span style={is1Visible ? visibleStyles : invisStyles}>Who We Are
           </span>
         </h2>
-        <section ref={ref1}>
-          <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
+        <section ref={ref1} className="images-container">
+          <p>{"<PHOTOS HERE>"}</p>
         </section>
         <section className="about-section-content">
           <p>We are thrilled to welcome you to the Frozen Beverage Company, Atomic Slush! Our
@@ -40,25 +40,25 @@ const About = () => {
             choosing Atomic Slush!
           </p>
         </section>
-      </div>
-      <div className="about-section">
-        <h2 className="about-section-header">
-          {/* {People({ color: "var(--orange)", className: "about-icon" })} */}
-          <span style={is2Visible ? visibleStyles : invisStyles}>Why We Do It
-          </span>
-        </h2>
-        <section ref={ref2}>
-          <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
-        </section>
-      </div>
+      </div><hr className="section-divider" />
       <div className="about-section">
         <h2 className="about-section-header">
           {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
-          <span style={is3Visible ? visibleStyles : invisStyles}>Our Machines
+          <span style={is3Visible ? visibleStyles : invisStyles}>Our Mission
           </span>
         </h2>
-        <section ref={ref3}>
-          <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
+        <section ref={ref3} className="images-container">
+          <p >{"<PHOTOS HERE>"}</p>
+        </section>
+      </div><hr className="section-divider" />
+      <div className="about-section">
+        <h2 className="about-section-header">
+          {/* {People({ color: "var(--orange)", className: "about-icon" })} */}
+          <span style={is2Visible ? visibleStyles : invisStyles}>Our Machines
+          </span>
+        </h2>
+        <section ref={ref2} className="images-container">
+          <p>{"<PHOTOS HERE>"}</p>
         </section>
         <section className="about-section-content">
           <p>
@@ -74,10 +74,7 @@ const About = () => {
             and we will readily provide a complimentary one for your convenience.
           </p>
         </section>
-
       </div>
-
-
     </div>
   )
 }
