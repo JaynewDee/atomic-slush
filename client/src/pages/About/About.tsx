@@ -11,7 +11,7 @@ const About = () => {
   const is3Visible = useIsVisible(ref3)
 
   const visibleStyles = {
-    color: "var(--ocean)", transition: "all 3s", width: "100%", borderBottom: "1px solid white", borderTop: "1px solid var(--orange)", borderRadius: "1rem"
+    color: "var(--ocean)", transition: "all 3s", width: "100%", borderBottom: "1px solid white", borderTop: "none", borderRadius: "1rem"
   }
   const invisStyles = { color: "white", transition: "all 3s", width: "33%", borderBottom: "0px solid white", borderRadius: "0rem" }
   return (
@@ -40,7 +40,7 @@ const About = () => {
             choosing Atomic Slush!
           </p>
         </section>
-      </div>
+      </div><hr className="section-divider" />
       <div className="about-section">
         <h2 className="about-section-header">
           {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
@@ -50,7 +50,7 @@ const About = () => {
         <section ref={ref3} className="images-container">
           <p >{"<PHOTOS HERE>"}</p>
         </section>
-      </div>
+      </div><hr className="section-divider" />
       <div className="about-section">
         <h2 className="about-section-header">
           {/* {People({ color: "var(--orange)", className: "about-icon" })} */}

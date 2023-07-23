@@ -11,7 +11,7 @@ export function RecipesGrid() {
             <Header />
             <div id="recipes-grid">
                 {
-                    recipes.map(r => <div key={r.id}>{r.name}</div>)
+                    recipes.map(r => <><div key={r.id}>{r.name}</div></>)
                 }
             </div>
         </>

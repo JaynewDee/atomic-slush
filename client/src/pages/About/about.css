@@ -1,24 +1,31 @@
 .about-section {
   text-align: center;
   font-family: var(--caveat);
- margin: 6rem 13%;
+ margin: 6rem;
  min-height: 33dvh;
-  border-bottom: 1px solid white;
  }
 
 .about-section-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-   font-size: 2rem;
-}
+   font-size: 3rem;
+ }
 
+ .about-section-header > span {
+   padding-bottom: 1rem;
+ }
+.section-divider {
+  background-color: var(--rich-purp);
+  height: 1px;
+  border: none;
+}
 .about-section-content {
   font-size: 1.33rem;
 }
 
 .about-section-content > p {
-  width: 90%;
+  width: 80%;
   margin: 1.66rem auto;
 }
 .machine-section {

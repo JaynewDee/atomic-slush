@@ -3,8 +3,7 @@
   color: var(--lightest);
   font-family: var(--caveat);
   box-shadow: 0 -3px 15px 1px rgba(25, 25, 25, 0.7);
-  margin-top: 3rem;
-}
+ }
 
 disclaimer-text {
   display: flex;
