@@ -23,8 +23,8 @@ const About = () => {
           <span style={is1Visible ? visibleStyles : invisStyles}>Who We Are
           </span>
         </h2>
-        <section ref={ref1}>
-          <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
+        <section ref={ref1} className="images-container">
+          <p>{"<PHOTOS HERE>"}</p>
         </section>
         <section className="about-section-content">
           <p>We are thrilled to welcome you to the Frozen Beverage Company, Atomic Slush! Our
@@ -44,21 +44,21 @@ const About = () => {
       <div className="about-section">
         <h2 className="about-section-header">
           {/* {People({ color: "var(--orange)", className: "about-icon" })} */}
-          <span style={is2Visible ? visibleStyles : invisStyles}>Why We Do It
+          <span style={is2Visible ? visibleStyles : invisStyles}>Our Machines
           </span>
         </h2>
-        <section ref={ref2}>
-          <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
+        <section ref={ref2} className="images-container">
+          <p>{"<PHOTOS HERE>"}</p>
         </section>
       </div>
       <div className="about-section">
         <h2 className="about-section-header">
           {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
-          <span style={is3Visible ? visibleStyles : invisStyles}>Our Machines
+          <span style={is3Visible ? visibleStyles : invisStyles}>Our Mission
           </span>
         </h2>
-        <section ref={ref3}>
-          <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
+        <section ref={ref3} className="images-container">
+          <p >{"<PHOTOS HERE>"}</p>
         </section>
         <section className="about-section-content">
           <p>

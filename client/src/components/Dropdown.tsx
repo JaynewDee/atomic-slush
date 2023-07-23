@@ -28,6 +28,7 @@ export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
     function handleClickOff(e: any) {
       const targetClass = e.target.classList[0];
       const targetClasses = ['App', 'navbar', 'page-container', 'tip-top', 'logo-img']
+
       if (targetClasses.includes(targetClass)) {
         setMenuState(false)
       }

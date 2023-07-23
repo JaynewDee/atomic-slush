@@ -21,21 +21,23 @@
   transform: unset;
 }
 
-.burger-menu-container > .social-links {
-  font-size: 1.33rem;
-  width: 100%;
-  transform: unset;
-  text-align: right;
-}
-
 #burger-nav-links {
   display: flex;
   flex-flow: column nowrap;
-  transform: unset;
+  align-items: flex-end;
+  margin: 33% 2rem auto;
+  font-size: 1.33rem;
 }
 
 #burger-nav-links > a {
-  font-size: 1rem;
+  margin-bottom: 1rem;
+  transform: unset;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
 }
 
 .burger-line {
@@ -49,7 +51,6 @@
 #burger-line-top {
   border-left: 3px solid white;
 }
-
 
 @keyframes top-collapse {
   0% {

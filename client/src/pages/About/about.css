@@ -30,6 +30,13 @@
   padding: 5rem 2rem;
 }
 
+.images-container {
+  font-size: 1.66rem;
+  margin: 13rem auto;
+  border: 1px solid white;
+  width: 50%;
+}
+
 .machine-section > p {
   padding: 1rem;
 }
