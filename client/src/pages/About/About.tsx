@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useRef } from 'react'
 import "./about.css"
 import { useIsVisible } from '../../hooks';
 //import { FaHandHoldingHeart as Heart, FaPeopleCarry as People } from 'react-icons/fa'
@@ -17,13 +17,13 @@ const About = () => {
   return (
     <div className="about-page">
       {/* <AboutNav displayState={displayState} setDisplayState={setDisplayState} /> */}
-      <div className="about-section" ref={ref1}>
+      <div className="about-section">
         <h2 className="about-section-header">
           {/* {Heart({ color: "var(--orange)", className: "about-icon" })} */}
           <span style={is1Visible ? visibleStyles : invisStyles}>Who We Are
           </span>
         </h2>
-        <section>
+        <section ref={ref1}>
           <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
         </section>
         <section className="about-section-content">
@@ -41,23 +41,23 @@ const About = () => {
           </p>
         </section>
       </div>
-      <div className="about-section" ref={ref2}>
+      <div className="about-section">
         <h2 className="about-section-header">
           {/* {People({ color: "var(--orange)", className: "about-icon" })} */}
           <span style={is2Visible ? visibleStyles : invisStyles}>Why We Do It
           </span>
         </h2>
-        <section>
+        <section ref={ref2}>
           <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
         </section>
       </div>
-      <div className="about-section" ref={ref3}>
+      <div className="about-section">
         <h2 className="about-section-header">
           {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
           <span style={is3Visible ? visibleStyles : invisStyles}>Our Machines
           </span>
         </h2>
-        <section>
+        <section ref={ref3}>
           <p style={{ fontSize: "1.66rem", margin: "5rem auto", border: "1px solid white", width: "50%" }}>{"<PHOTOS HERE>"}</p>
         </section>
         <section className="about-section-content">

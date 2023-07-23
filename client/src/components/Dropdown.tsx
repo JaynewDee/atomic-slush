@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import "./dropdown.css"
 import Social from './Header/Social'
 import { Links, NavProps } from './Navbar'

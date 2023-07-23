@@ -21,22 +21,6 @@
   cursor: pointer;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.66rem 2rem;
-  margin: auto auto 0;
-}
-
-.social-links > a {
-  margin: 0 0.33rem;
-}
-
-.social-icon {
-  transition: all 0.11s;
-}
-
 .social-icon:hover {
   color: var(--orange);
   transform: scale(1.1);

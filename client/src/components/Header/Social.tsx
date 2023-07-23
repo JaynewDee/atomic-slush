@@ -1,5 +1,4 @@
 import { ImInstagram, ImFacebook, ImTwitter } from 'react-icons/im'
-import React from 'react'
 
 const Social = () => {
     return (
