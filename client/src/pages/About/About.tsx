@@ -43,6 +43,16 @@ const About = () => {
       </div>
       <div className="about-section">
         <h2 className="about-section-header">
+          {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
+          <span style={is3Visible ? visibleStyles : invisStyles}>Our Mission
+          </span>
+        </h2>
+        <section ref={ref3} className="images-container">
+          <p >{"<PHOTOS HERE>"}</p>
+        </section>
+      </div>
+      <div className="about-section">
+        <h2 className="about-section-header">
           {/* {People({ color: "var(--orange)", className: "about-icon" })} */}
           <span style={is2Visible ? visibleStyles : invisStyles}>Our Machines
           </span>
@@ -63,16 +73,6 @@ const About = () => {
           <p>If you require an extension cord, simply indicate it on the Tripleseat event form
             and we will readily provide a complimentary one for your convenience.
           </p>
-        </section>
-      </div>
-      <div className="about-section">
-        <h2 className="about-section-header">
-          {/* {Machine({ color: "var(--orange)", className: "about-icon" })} */}
-          <span style={is3Visible ? visibleStyles : invisStyles}>Our Mission
-          </span>
-        </h2>
-        <section ref={ref3} className="images-container">
-          <p >{"<PHOTOS HERE>"}</p>
         </section>
       </div>
     </div>

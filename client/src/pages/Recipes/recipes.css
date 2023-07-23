@@ -103,7 +103,8 @@
   width: 90%;
   max-width: 1024px;
   margin: 6rem auto 9rem;
-    font-size: 1.33rem;
+    font-size: 1.66rem;
+    font-family: var(--caveat)
 }
 
 #recipes-grid > div {
@@ -117,6 +118,10 @@
   border-left: 2px solid var(--orange);
   margin: 1rem;
   box-shadow: 0px 0px 15px 6px rgba(20, 20, 20, 1)
+}
+
+h3.header-row {
+  filter: drop-shadow(0 0 1px black)
 }
 
 @media screen and (max-width: 768px) {
