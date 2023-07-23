@@ -2,13 +2,10 @@ import { Dispatch, SetStateAction } from 'react';
 import { Link } from "react-router-dom";
 import logoImg from '/asset-1.png'
 
-const pathSwitch = (path: string) =>
-  path === "recipes" ? `/${path}/${path}/1` : path === "about" ? `/${path}` : `/${path}`;
-
 const NavLink = (path: string, activeView: string, viewSetter: any) =>
   <Link
     key={path}
-    to={pathSwitch(path)}
+    to={`/${path}`}
     className={path}
     style={activeView === path ? { color: "var(--rich-purp)", padding: "0" } : {}}
     onClick={() => viewSetter(path)}

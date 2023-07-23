@@ -60,11 +60,11 @@ export const recipes: RecipeType[] = [
                 volume_liters: 1.84
             },
             {
-                name: "Pineapple Juice",
+                name: "Pineapple",
                 volume_liters: 1.63
             },
             {
-                name: "Lime Juice",
+                name: "Lime",
                 volume_liters: 0.4
             },
             {
@@ -91,7 +91,7 @@ export const recipes: RecipeType[] = [
                 volume_liters: 0.54
             },
             {
-                name: "Grapefruit Juice",
+                name: "Grapefruit",
                 volume_liters: 2.55
             },
             {
@@ -99,7 +99,7 @@ export const recipes: RecipeType[] = [
                 volume_liters: 1.08
             },
             {
-                name: "Lime Juice",
+                name: "Lime",
                 volume_liters: 1.08
             },
             {
@@ -155,6 +155,41 @@ export const recipes: RecipeType[] = [
             {
                 name: "Water",
                 volume_liters: 5
+            }
+        ],
+        frozen: true
+    },
+    {
+        id: 6,
+        name: "Cosmo",
+        ingredients: [
+            {
+                name: "Vodka",
+                volume_liters: 1.4,
+            },
+            {
+                name: "Orange Liqueur",
+                volume_liters: 1.4
+            },
+            {
+                name: "Lime",
+                volume_liters: 1
+            },
+            {
+                name: "Orange",
+                volume_liters: .7
+            },
+            {
+                name: "Simple Syrup",
+                volume_liters: 1.4
+            },
+            {
+                name: "Cranberry",
+                volume_liters: 2.06
+            },
+            {
+                name: "Water",
+                volume_liters: 1.4
             }
         ],
         frozen: true

@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link, Outlet, useLoaderData } from 'react-router-dom'
 import { RecipeType } from '../../data/recipes';
 import "./recipes.css"
-import { SectionHeader } from '../../components/Section';
 import Note from './Note';
 
 const RecipeNav = ({ active, setActive }: any) => {
@@ -33,7 +32,6 @@ export const Recipes = () => {
   const [active, setActive] = useState("Classic Margarita")
   return (
     <>
-      <SectionHeader />
       <article className="recipes-container">
         <RecipeNav active={active} setActive={setActive} />
         <Outlet />
