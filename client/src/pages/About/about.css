@@ -1,7 +1,7 @@
 .about-section {
   text-align: center;
   font-family: var(--caveat);
- margin: 6rem;
+ margin: 6rem 6rem 12rem;
  min-height: 33dvh;
  }
 
@@ -9,19 +9,22 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-   font-size: 3rem;
+   font-size: 2.66rem;
+ white-space: nowrap;
  }
 
  .about-section-header > span {
    padding-bottom: 1rem;
  }
+
 .section-divider {
   background-color: var(--rich-purp);
   height: 1px;
   border: none;
 }
+
 .about-section-content {
-  font-size: 1.33rem;
+  font-size: 1.66rem;
 }
 
 .about-section-content > p {
@@ -75,5 +78,9 @@
 
   .machine-section {
     width: 90%;
+  }
+
+  .about-section-header {
+  margin: auto;
   }
 }

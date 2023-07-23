@@ -11,7 +11,7 @@ const About = () => {
   const is3Visible = useIsVisible(ref3)
 
   const visibleStyles = {
-    color: "var(--ocean)", transition: "all 3s", width: "100%", borderBottom: "1px solid white", borderTop: "none", borderRadius: "1rem"
+    color: "var(--ocean)", transition: "all 3s", width: "100%", borderBottom: "1px solid white", borderTop: "none"
   }
   const invisStyles = { color: "white", transition: "all 3s", width: "33%", borderBottom: "0px solid white", borderRadius: "0rem" }
   return (
