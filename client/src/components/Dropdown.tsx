@@ -1,33 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import "./dropdown.css"
 import Social from './Header/Social'
+import { Links, NavProps } from './Navbar'
 
 
 const motion = ".33s ease 0s 1 normal forwards"
 
-const topExpand = {
-  animation: `top-expand ${motion}`
+const { top, mid, bot } = {
+  top: {
+    expand: { animation: `top-expand ${motion}` },
+    collapse: { animation: `top-collapse ${motion}` }
+  },
+  mid: {
+    expand: { animation: `mid-expand ${motion}` },
+    collapse: { animation: `mid-collapse ${motion}` }
+  },
+  bot: {
+    expand: { animation: `bot-expand ${motion}` },
+    collapse: { animation: `bot-collapse ${motion}` }
+  }
 }
 
-const topCollapse = {
-  animation: `top-collapse ${motion}`
-}
-
-const midExpand = {
-  animation: `mid-expand ${motion}`
-}
-const midCollapse = {
-  animation: `mid-collapse ${motion}`
-}
-
-const botExpand = {
-  animation: `bot-expand ${motion}`
-}
-const botCollapse = {
-  animation: `bot-collapse ${motion}`
-}
-
-export const Dropdown = () => {
+export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
   const [menuState, setMenuState] = useState(false);
 
   useEffect(() => {
@@ -48,12 +42,19 @@ export const Dropdown = () => {
 
   return <>
     <button className="dropdown-toggle-btn" type="button" onClick={toggleMenu}>
-      <div className="burger-line" data-state={menuState ? "expanded" : "collapsed"} id="burger-line-top" style={menuState ? topExpand : topCollapse} />
-      <div className="burger-line" id="burger-line-mid" style={menuState ? midExpand : midCollapse} />
-      <div className="burger-line" id="burger-line-bot" style={menuState ? botExpand : botCollapse} />
+      <div className="burger-line" data-state={menuState ? "expanded" : "collapsed"} id="burger-line-top" style={menuState ? top.expand : top.collapse} />
+      <div className="burger-line" id="burger-line-mid" style={menuState ? mid.expand : mid.collapse} />
+      <div className="burger-line" id="burger-line-bot" style={menuState ? bot.expand : bot.collapse} />
     </button>
-    <div className="burger-menu-container" style={menuState ? { width: "300px" } : { width: "0" }}>
-      {menuState ? <Social /> : <></>}
+    <div className="burger-menu-container" style={menuState ? { width: "225px" } : { width: "0" }}>
+      {menuState ?
+        <>
+          <nav id="burger-nav-links">
+            {Links(activeView, setActiveView)}
+          </nav>
+          <Social /></>
+        : <></>
+      }
     </div>
   </>
 }

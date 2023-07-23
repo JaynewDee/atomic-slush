@@ -19,7 +19,7 @@ body {
   align-items: center;
   position: relative;
   padding-top: 5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: -1rem;
   z-index: 3;
   text-transform: uppercase;
   filter: saturate(1.1);
