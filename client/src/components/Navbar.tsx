@@ -16,7 +16,6 @@ const NavLink = (path: string, activeView: string, viewSetter: any) => {
 }
 
 export const Links = (activeView: string, setActiveView: Dispatch<SetStateAction<string>>) => {
-  console.log(activeView)
   return ["about", "recipes", "quote"]
     .map(path => NavLink(path, activeView, setActiveView))
 }
