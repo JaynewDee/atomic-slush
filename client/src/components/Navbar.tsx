@@ -7,7 +7,7 @@ const NavLink = (path: string, activeView: string, viewSetter: any) => {
     key={path}
     to={`/${path}`}
     className={path}
-    data-active={activeView === path}
+    data-active={path === activeView}
     onClick={() => viewSetter(path)}
   >
     {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : "Drink Recipes"}
