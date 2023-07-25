@@ -1,19 +1,18 @@
 import { useRef } from 'react'
 import "./about.css"
 import { useIsVisible } from '../../hooks';
-//import { FaHandHoldingHeart as Heart, FaPeopleCarry as People } from 'react-icons/fa'
-//import { CgSmartHomeWashMachine as Machine } from "react-icons/cg"
+
+//////////////
 
 const About = () => {
   const [ref1, ref2, ref3] = [useRef<HTMLDivElement | any>(), useRef<HTMLDivElement | any>(), useRef<HTMLDivElement | any>()];
-  const is1Visible = useIsVisible(ref1);
-  const is2Visible = useIsVisible(ref2)
-  const is3Visible = useIsVisible(ref3)
+  const [is1Visible, is2Visible, is3Visible] = [useIsVisible(ref1), useIsVisible(ref2), useIsVisible(ref3)];
 
   const visibleStyles = {
     color: "var(--ocean)", transition: "all 3s", width: "100%", borderBottom: "1px solid white", borderTop: "none"
   }
   const invisStyles = { color: "white", transition: "all 3s", width: "33%", borderBottom: "0px solid white", borderRadius: "0rem" }
+
   return (
     <div className="about-page">
       {/* <AboutNav displayState={displayState} setDisplayState={setDisplayState} /> */}
