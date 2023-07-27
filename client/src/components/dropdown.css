@@ -4,6 +4,7 @@
   z-index: 10;
   right: 0;
   top: 0;
+  background: none;
 }
 
 .burger-menu-container {
@@ -106,15 +107,13 @@
   100% {
     width: 20px;
     border: 1px solid white;
-    background-color: var(--orange)
-  }
+   }
 }
 
 @keyframes mid-expand {
   0% {
     width: 20px;
     border: 1px solid white;
-    background-color: var(rich-purp)
   }
   100% {
     width: 0px;
