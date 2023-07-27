@@ -2,6 +2,10 @@
   text-decoration: none;
 }
 
+a {
+  color: white
+}
+
 #root {
   font-family: var(--lilita);
 }
