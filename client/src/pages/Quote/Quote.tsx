@@ -3,11 +3,7 @@ import "./quote.css";
 const QuoteForm = () => {
   return (
     <div id="embedded-form-frame">
-      <h1>
-        TRIPLESEAT <br />
-        EMBEDDING <br />
-        HERE <br />
-      </h1>
+      <iframe src="embed.html" width="100%" height="100%"></iframe>
     </div>
   );
 }

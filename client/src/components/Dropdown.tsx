@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import "./dropdown.css"
-import Social from './Header/Social'
+import Social from './Social'
 import { Links, NavProps } from './Navbar'
 
 
@@ -47,7 +47,7 @@ export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
       <div className="burger-line" id="burger-line-mid" style={menuState ? mid.expand : mid.collapse} />
       <div className="burger-line" id="burger-line-bot" style={menuState ? bot.expand : bot.collapse} />
     </button>
-    <div className="burger-menu-container" style={menuState ? { width: "225px" } : { width: "0" }}>
+    <div className="burger-menu-container" style={menuState ? { width: "225px", fontSize: "1.33rem" } : { width: "0", fontSize: "0rem" }}>
       {menuState ?
         <>
           <nav id="burger-nav-links">

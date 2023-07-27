@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <style>
+        html {
+            box-shadow: inset 0 0 8px 3px rgba(15, 15, 15, .5);
+            font-family: "Lilita", cursive;
+        }
+
+        :root {
+            font-size: 18px;
+            color: white;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        input,
+        textarea,
+        select {
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            background-color: rgba(51, 194, 228, 1);
+            color: white;
+            padding: 5px;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #tripleseat_embed_form {
+            height: 100%;
+            background-color: rgba(95, 75, 159, .1);
+
+        }
+
+        #tripleseat_embed_form table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        #tripleseat_embed_form button {
+            cursor: pointer;
+        }
+
+        #tripleseat_embed_form table {
+            width: 90vw;
+        }
+
+        @media screen and (max-width: 920px) {
+            body {
+                padding: 1rem;
+            }
+        }
+
+        #tripleseat_embed_form label {
+            display: block;
+            cursor: pointer;
+        }
+
+        #tripleseat_embed_form label span.required {
+            color: #ed1c24;
+        }
+
+        #tripleseat_embed_form input,
+        #tripleseat_embed_form button,
+        #tripleseat_embed_form textarea {
+            border: solid 1px black;
+        }
+
+        #tripleseat_embed_form input.error,
+        #tripleseat_embed_form .location_list.error,
+        .errorExplanation {
+            background-color: #ffecdc;
+            border: 1px solid #ed1c24;
+        }
+
+        #tripleseat_embed_form_inline input.error,
+        #tripleseat_embed_form_inline .location_list.error,
+        .errorExplanation {
+            border: 1px solid #ed1c24;
+        }
+
+        #tripleseat_embed_form_inline .location_list.error,
+        #tripleseat_embed_form .location_list.error {
+            padding: 3px;
+        }
+
+        #tripleseat_embed_form .errorExplanation {
+            width: 450px;
+        }
+
+        #tripleseat_embed_form .location_list input {
+            float: left;
+            border: none;
+        }
+
+        #tripleseat_embed_form .location_list label {
+            float: left;
+            cursor: pointer;
+        }
+
+        #tripleseat_embed_form .location_list div {
+            clear: both;
+        }
+
+        #tripleseat_embed_form #contact_preference_label {
+            display: inline;
+        }
+
+        #tripleseat_embed_form #lead_guest_count {
+            width: 107px;
+        }
+
+        #tripleseat_embed_form #lead_phone_number {
+            width: 120px;
+        }
+
+        #tripleseat_embed_form #lead_phone_number_extension {
+            width: 50px;
+        }
+
+        #tripleseat_embed_form .lead_event_description,
+        #tripleseat_embed_form .lead_booking_description,
+        #tripleseat_embed_form .lead_additional_information,
+        #tripleseat_embed_form .lead_referral_source_other,
+        #tripleseat_embed_form .lead_delivery_instructions {
+            width: 100%;
+        }
+
+        #tripleseat_embed_form .lead_referral_source_other {
+            margin-top: 5px;
+        }
+
+        #tripleseat_embed_form .row_email_opt_out input,
+        #tripleseat_embed_form .row_email_opt_out label {
+            float: left;
+        }
+
+        #tripleseat_embed_form .row_gdpr_consent input,
+        #tripleseat_embed_form .row_gdpr_consent label {
+            float: left;
+        }
+
+        #tripleseat_embed_form .row_booking_guest_rooms_needed input,
+        #tripleseat_embed_form .row_booking_guest_rooms_needed label {
+            float: left;
+        }
+
+        #tripleseat_embed_form .row_booking_dates_flexible input,
+        #tripleseat_embed_form .row_booking_dates_flexible label {
+            float: left;
+        }
+
+        #tripleseat_embed_form .row_booking_events_needed input,
+        #tripleseat_embed_form .row_booking_events_needed label {
+            float: left;
+        }
+
+        #tripleseat_embed_form .row_event_title h4 {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        #tripleseat_embed_form .sr-only {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            width: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        #tripleseat_embed_form .help-block {
+            display: block;
+            margin-top: 5px;
+        }
+
+        #tripleseat_embed_form .danger {
+            color: #cd4343;
+        }
+
+        #tripleseat_embed_form .capitalize {
+            text-transform: capitalize;
+        }
+
+        #tripleseat_embed_form .g-recaptcha {
+            margin-bottom: 10px;
+        }
+
+        #tripleseat_embed_form #lead_form_submit a {
+            float: right;
+            font-size: 80%;
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        #tripleseat_embed_form .button {
+            float: left;
+            font-size: 15px;
+        }
+
+        #tripleseat_embed_form_inline #submit_spinner,
+        #tripleseat_embed_form #submit_spinner {
+            background: url(https://tripleseat-static-production.s3.amazonaws.com/images/wheel.svg) no-repeat;
+            float: left;
+            width: 16px;
+            height: 16px;
+            margin-left: 10px;
+            display: none;
+        }
+
+        #tripleseat_embed_form_inline .fa-exclamation-triangle,
+        #tripleseat_embed_form .fa-exclamation-triangle {
+            margin-right: 3px;
+        }
+
+        #tripleseat_embed_form_inline button {
+            cursor: pointer;
+        }
+
+        #tripleseat_embed_form_inline label {
+            cursor: pointer;
+        }
+
+        #tripleseat_embed_form_inline h2 {
+            float: left;
+            clear: left;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field_section {
+            float: left;
+            clear: left;
+            width: 100%;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field {
+            float: left;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field label {
+            float: left;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field input {
+            float: left;
+            clear: left;
+        }
+
+        #tripleseat_embed_form_inline .ts_contact_preference select {
+            margin-left: 10px;
+        }
+
+        #tripleseat_embed_form_inline .location_list,
+        #tripleseat_embed_form_inline .referral_list,
+        #tripleseat_embed_form_inline select {
+            float: left;
+            clear: left;
+        }
+
+        #tripleseat_embed_form_inline #lead_phone_number_extension {
+            width: 50px;
+        }
+
+        #tripleseat_embed_form_inline .lead_event_description,
+        #tripleseat_embed_form_inline .lead_booking_description,
+        #tripleseat_embed_form_inline .lead_additional_information,
+        #tripleseat_embed_form_inline .lead_referral_source_other,
+        #tripleseat_embed_form_inline .lead_delivery_instructions {
+            width: 100%;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field.ts_powered_by {
+            float: right;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field_section.ts_event_title_block {
+            border-bottom: 1px solid #eee;
+            margin-top: 10px;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field.ts_event_title {
+            width: 50%;
+            margin-bottom: 5px;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field.ts_event_title h4 {
+            margin: 0;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_field.ts_event_actions {}
+
+        #tripleseat_embed_form_inline .tripleseat_field .button {
+            font-size: 15px;
+            border: solid 1px black;
+        }
+
+        #tripleseat_embed_form_inline .tripleseat_clear {
+            clear: both;
+        }
+
+        #tripleseat_embed_form_inline .ts_email_opt_out input,
+        #tripleseat_embed_form_inline .ts_email_opt_out label {
+            float: left;
+        }
+
+        #tripleseat_embed_form_inline .sr-only {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            width: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        #tripleseat_embed_form_inline .help-block {
+            float: left;
+            clear: left;
+            margin-top: 2px;
+        }
+
+        #tripleseat_embed_form_inline .danger {
+            color: #cd4343;
+        }
+
+        #tripleseat_embed_form_inline .capitalize {
+            text-transform: capitalize;
+        }
+
+        .tripleseat_field.ts_powered_by a:visited,
+        .tripleseat_field.ts_powered_by a {
+            color: black;
+        }
+
+        div.timeselect {
+            position: absolute;
+            height: 140px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 130px;
+        }
+
+        div.timeselect a {
+            display: block;
+            height: 19px;
+            line-height: 19px;
+            padding: 0 20px 0 3px;
+            white-space: nowrap;
+            text-decoration: none;
+            color: black;
+        }
+
+        div.timeselect a.hover {
+            background-color: #777;
+            color: #fff;
+        }
+
+
+        #ui-datepicker-div {
+            display: none;
+        }
+
+        #ui-datepicker-div,
+        div.timeselect {
+            z-index: 100000 !important;
+        }
+
+        body .ui-datepicker {
+            font-size: 12px;
+        }
+
+        body .ui-datepicker td a:hover {
+            text-decoration: underline;
+            outline: 1px solid #999;
+        }
+
+        body .ui-state-active {
+            font-weight: bold !important;
+        }
+
+        body .ui-datepicker-today a {
+            font-style: italic;
+        }
+
+        body .ui-datepicker-today a:hover {
+            outline: 1px solid #fcefa1 !important;
+        }
+
+        input.hasDatepicker {
+            background-image: url(https://tripleseat-static-production.s3.amazonaws.com/images/icons/icon_calendar.png);
+            background-position: 3px center;
+            background-repeat: no-repeat;
+            padding-left: 23px;
+            width: 84px;
+        }
+
+        input.timeselect_input {
+            background-image: url(https://tripleseat-static-production.s3.amazonaws.com/images/icons/icon_clock.png);
+            background-position: 3px center;
+            background-repeat: no-repeat;
+            padding-left: 23px;
+            width: 84px;
+        }
+
+        .errorExplanation {
+            color: black;
+            margin: 0 0 20px;
+            padding: 5px;
+        }
+
+        .errorExplanation h2 {
+            background: none;
+            font-size: 12pt;
+            font-style: normal;
+            color: #ed1c24;
+            border-color: #ed1c24;
+            margin: 0 0 5px 0;
+        }
+
+        .errorExplanation p {
+            margin: 0 0 10px 0;
+        }
+
+        .errorExplanation ul {
+            margin: 3px 0 10px 0;
+            padding: 0;
+        }
+
+        .errorExplanation li {
+            margin: 0 0 0 15px;
+        }
+
+        .errorExplanation a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .errorExplanation a:hover {
+            text-decoration: underline;
+        }
+
+        /* time selector */
+        div.timeselect {
+            position: absolute;
+            height: 140px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 130px;
+        }
+
+        div.timeselect a {
+            display: block;
+            height: 19px;
+            line-height: 19px;
+            padding: 0 20px 0 3px;
+            white-space: nowrap;
+        }
+
+        div.timeselect a:hover {
+            color: black;
+        }
+
+        div.timeselect a.hover {
+            background-color: #4780A2;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgba(95, 75, 159, .93)">
+    <script
+        src="https://api.tripleseat.com/v1/leads/ts_script.js?lead_form_id=30917&public_key=a55e140c1ba0873ea06a42162c60f820dc2720e1">
+    </script>
+</body>
+
+</html>

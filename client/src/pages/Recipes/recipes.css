@@ -101,7 +101,7 @@
   grid-template-rows: auto;
   width: 90%;
   max-width: 1024px;
-  margin: 3rem auto 15rem;
+  margin: 5rem auto 21rem;
   font-size: 1.66rem;
   font-family: var(--caveat)
 }
@@ -123,6 +123,11 @@ h3.header-row {
   filter: drop-shadow(0 0 1px black)
 }
 
+@media screen and (max-width: 980px) {
+  #recipes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} 
 @media screen and (max-width: 768px) {
   .recipes-container {
     width: 100%;

@@ -2,17 +2,18 @@ import { Dispatch, SetStateAction } from 'react';
 import { Link } from "react-router-dom";
 import logoImg from '/asset-1.png'
 
-const NavLink = (path: string, activeView: string, viewSetter: any) =>
-  <Link
+const NavLink = (path: string, activeView: string, viewSetter: any) => {
+  return <Link
     key={path}
     to={`/${path}`}
     className={path}
-    style={activeView === path ? { borderLeft: "5px solid var(--rich-purp)", borderRight: "5px solid var(--rich-purp)", boxShadow: "0 0px 5px 1px rgba(15, 15, 15, .1)", borderRadius: "25%" } : {}}
-
+    data-active={path === activeView}
     onClick={() => viewSetter(path)}
   >
     {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : "Drink Recipes"}
   </Link>
+
+}
 
 export const Links = (activeView: string, setActiveView: Dispatch<SetStateAction<string>>) => {
   return ["about", "recipes", "quote"]

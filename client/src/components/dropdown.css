@@ -13,31 +13,53 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 375px;
+  height: 300px;
   background-color: rgba(5, 5, 5, .9);
-  transition: all .33s;
+  transition: all .5s;
   border-radius: 0 0 0 6px;
   box-shadow: 0px 0px 12px 1px rgba(5, 5, 5, .4);
+}
+
+.burger-menu-container .social-links a svg {
+  font-size: 1rem;
 }
 
 #burger-nav-links {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-  margin: 33% 2rem auto;
-  font-size: 1.33rem;
-}
+  margin: 33% 1rem auto;
+  }
 
 #burger-nav-links > a {
   margin-bottom: 1rem;
   transform: unset;
-}
+  transition: all .5s
+ }
+
+ #burger-nav-links  a[data-active=true] {
+  border-left: none;
+  border-right: none;
+ }
+
+ #burger-nav-links a[data-active=true]::after {
+  content: "<";
+  margin-left: 1rem;
+  color: var(--orange)
+ }
 
 .social-links {
   display: flex;
-  justify-content: space-evenly;
-  margin: 1rem auto;
-  width: 66%;
+  justify-content: center;
+  margin: 1rem 0 .5rem;
+  font-size: 1rem;
+  padding-top: .5rem;
+  border-top: 3px solid var(--rich-purp)
+}
+
+.social-links > a {
+  display: flex;
+  margin: auto .33rem;
 }
 
 .burger-line {
