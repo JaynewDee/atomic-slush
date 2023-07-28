@@ -5,6 +5,8 @@
   right: 0;
   top: 0;
   background: none;
+  border: none;
+  cursor: pointer
 }
 
 .burger-menu-container {
@@ -30,24 +32,25 @@
   flex-flow: column nowrap;
   align-items: flex-end;
   margin: 33% 1rem auto;
-  }
+}
 
-#burger-nav-links > a {
+#burger-nav-links>a {
   margin-bottom: 1rem;
   transform: unset;
-  transition: all .5s
- }
+  transition: all .5s;
+  color: white;
+}
 
- #burger-nav-links  a[data-active=true] {
+#burger-nav-links a[data-active=true] {
   border-left: none;
   border-right: none;
- }
+}
 
- #burger-nav-links a[data-active=true]::after {
+#burger-nav-links a[data-active=true]::after {
   content: "<";
   margin-left: 1rem;
   color: var(--orange)
- }
+}
 
 .social-links {
   display: flex;
@@ -58,9 +61,10 @@
   border-top: 3px solid var(--rich-purp)
 }
 
-.social-links > a {
+.social-links>a {
   display: flex;
   margin: auto .33rem;
+  color: white;
 }
 
 .burger-line {
@@ -80,6 +84,7 @@
     transform: rotate(-135deg);
     height: 20px;
   }
+
   100% {
     transform: rotate(0deg);
     height: 2px;
@@ -87,16 +92,17 @@
 }
 
 @keyframes top-expand {
- 0% {
-    transform: rotate(0deg) ;
+  0% {
+    transform: rotate(0deg);
     height: 2px;
     margin: 0;
   }
+
   100% {
-    transform: rotate(-135deg) ;
+    transform: rotate(-135deg);
     height: 20px;
     margin: 0;
-  } 
+  }
 }
 
 @keyframes mid-collapse {
@@ -104,10 +110,11 @@
     width: 0px;
     border: 0px;
   }
+
   100% {
     width: 20px;
     border: 1px solid white;
-   }
+  }
 }
 
 @keyframes mid-expand {
@@ -115,6 +122,7 @@
     width: 20px;
     border: 1px solid white;
   }
+
   100% {
     width: 0px;
     border: 0px;
@@ -125,12 +133,13 @@
 @keyframes bot-collapse {
   0% {
     transform: rotate(-135deg);
-    width: 0px; 
+    width: 0px;
   }
+
   100% {
     transform: rotate(0deg);
     width: 20px;
-    
+
   }
 }
 
@@ -139,6 +148,7 @@
     transform: rotate(0deg);
     width: 20px;
   }
+
   100% {
     transform: rotate(-135deg);
     width: 0px;

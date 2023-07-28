@@ -9,9 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <style>
+        * {
+            font-family: "Lilita", cursive;
+        }
+
         html {
             box-shadow: inset 0 0 8px 3px rgba(15, 15, 15, .5);
-            font-family: "Lilita", cursive;
         }
 
         :root {
@@ -19,6 +22,7 @@
             color: white;
             height: 100%;
             overflow: hidden;
+            font-family: "Lilita", cursive;
         }
 
         input,
@@ -29,18 +33,27 @@
             border-radius: 3px;
             background-color: rgba(51, 194, 228, 1);
             color: white;
-            padding: 5px;
+            padding: 8px;
         }
 
         body {
             height: 100%;
             margin: 0;
+            font-family: "Lilita", cursive;
         }
 
         #tripleseat_embed_form {
             height: 100%;
             background-color: rgba(95, 75, 159, .1);
+            width: 66%;
+            margin: 0 auto;
+            font-family: "Lilita", cursive;
+        }
 
+        @media screen and (max-width: 768px) {
+            #tripleseat_embed_form {
+                width: 100%;
+            }
         }
 
         #tripleseat_embed_form table td {
@@ -54,12 +67,8 @@
 
 
         @media screen and (max-width: 920px) {
-            body {
-                padding: 1rem;
-            }
-
             #tripleseat_embed_form {
-                margin-right: 1rem;
+                padding: 3rem 1rem 3rem 0;
             }
         }
 
@@ -205,6 +214,7 @@
             font-size: 80%;
             margin-top: 3rem;
             text-align: left;
+            color: white
         }
 
         #tripleseat_embed_form .button {
@@ -302,7 +312,6 @@
             margin: 0;
         }
 
-        #tripleseat_embed_form_inline .tripleseat_field.ts_event_actions {}
 
         #tripleseat_embed_form_inline .tripleseat_field .button {
             font-size: 15px;
