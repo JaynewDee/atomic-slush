@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction } from 'react';
 import { Link } from "react-router-dom";
 import logoImg from '/asset-1.png'
+import "./navbar.css"
 
 const NavLink = (path: string, activeView: string, viewSetter: any) => {
   return <Link
@@ -10,7 +11,7 @@ const NavLink = (path: string, activeView: string, viewSetter: any) => {
     data-active={path === activeView}
     onClick={() => viewSetter(path)}
   >
-    {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : "Drink Recipes"}
+    {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : "Services"}
   </Link>
 
 }

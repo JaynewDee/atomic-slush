@@ -5,6 +5,7 @@
   right: 0;
   top: 0;
   background: none;
+  border: none;
 }
 
 .burger-menu-container {
@@ -35,7 +36,8 @@
 #burger-nav-links > a {
   margin-bottom: 1rem;
   transform: unset;
-  transition: all .5s
+  transition: all .5s;
+  color: white;
  }
 
  #burger-nav-links  a[data-active=true] {
@@ -61,6 +63,7 @@
 .social-links > a {
   display: flex;
   margin: auto .33rem;
+  color: white;
 }
 
 .burger-line {
