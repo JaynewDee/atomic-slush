@@ -45,10 +45,16 @@
         #tripleseat_embed_form {
             height: 100%;
             background-color: rgba(95, 75, 159, .1);
-            width: 100%;
+            width: 66%;
+            margin: 0 auto;
             font-family: "Lilita", cursive;
         }
 
+        @media screen and (max-width: 768px) {
+            #tripleseat_embed_form {
+                width: 100%;
+            }
+        }
 
         #tripleseat_embed_form table td {
             padding: 5px;
@@ -306,7 +312,6 @@
             margin: 0;
         }
 
-        #tripleseat_embed_form_inline .tripleseat_field.ts_event_actions {}
 
         #tripleseat_embed_form_inline .tripleseat_field .button {
             font-size: 15px;

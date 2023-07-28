@@ -19,14 +19,6 @@ body {
 }
 
 
-.about {
-  transform: translateY(-66px);
-}
-
-.quote {
-  transform: translateY(-66px);
-}
-
 .logo-img {
   height: 330px;
   margin-bottom: 5rem;
