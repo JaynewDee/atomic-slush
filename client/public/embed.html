@@ -18,7 +18,7 @@
         }
 
         :root {
-            font-size: 18px;
+            font-size: 14px;
             color: white;
             height: 100%;
             overflow: hidden;
@@ -51,8 +51,19 @@
         }
 
         @media screen and (max-width: 768px) {
+
+            input,
+            textarea,
+            select {
+                padding: 0px;
+            }
+
             #tripleseat_embed_form {
                 width: 100%;
+            }
+
+            #tripleseat_embed_form table td {
+                padding: 2px;
             }
         }
 
@@ -68,7 +79,13 @@
 
         @media screen and (max-width: 920px) {
             #tripleseat_embed_form {
-                padding: 3rem 1rem 3rem 0;
+                padding: 3rem .2rem 3rem 0;
+            }
+
+            input,
+            textarea,
+            select {
+                padding: 3px;
             }
         }
 
