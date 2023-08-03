@@ -26,18 +26,3 @@
   color: var(--orange);
   transform: scale(1.1);
 }
-
-.strip {
-  background-color: var(--lightest);
-  color: var(--darkest);
-  font-family: var(--caveat);
-  text-align: center;
-  letter-spacing: 2px;
-  height: 2rem;
-  display: flex;
-  align-items: center;
-  margin-top: 3.33rem;
-  border-top: 2px solid var(--ocean);
-  border-bottom: 2px solid var(--ocean);
-  justify-content: center;
-}
