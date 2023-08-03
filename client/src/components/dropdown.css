@@ -31,11 +31,10 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-  margin: 33% 1rem auto;
+  margin: 20% 1rem auto;
 }
 
 #burger-nav-links>a {
-  margin-bottom: 1rem;
   transform: unset;
   transition: all .5s;
   color: white;

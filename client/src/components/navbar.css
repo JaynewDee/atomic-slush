@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 80%;
+  max-width: 30rem;
   margin: 1rem auto 3rem;
   height: 5rem;
 }
@@ -35,13 +35,12 @@
   border-radius: 15%;
   border-right: 3px solid var(--rich-purp);
   margin: 1rem;
-  line-height: 1.1;
   transition: all .2s;
   color: white;
 }
 
 .nav-links-container a[data-active=true] {
-  transform: scale(1.1) translateY(-1rem);
+  transform: scale(1.1) translateY(-.5rem);
   border-left: 7px solid var(--rich-purp);
   border-radius: 15%;
   border-right: 7px solid var(--rich-purp);
@@ -67,7 +66,11 @@
     padding-top: 1rem;
   }
 
-  .nav-links-container>a {}
+  .nav-links-container>a {
+    margin: .5rem auto;
+  line-height: 1;
+  font-size: 90%;
+  }
 
   .nav-links-container a[data-active=true] {
     transform: scale(1.2);

@@ -1,0 +1,17 @@
+.menu-header {
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+.menu-header > h3 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+.header-pineapple {
+    font-size: 2rem;
+}
+
+.menu-header > .header-pineapple:nth-child(3) {
+    transform: scaleX(-1)
+}

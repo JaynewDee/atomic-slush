@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { recipes, RecipeType } from './data/recipes.ts';
-import { About, Quote, Home } from './pages';
+import { About, Quote, Home, Menu, Services } from './pages';
 
 import { RecipesGrid } from "./pages/Recipes/RecipesGrid.tsx"
 
@@ -34,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/quote",
         element: <Quote />
+      },
+      {
+        path: "/menu",
+        element: <Menu />
+      },
+      {
+        path: "/services",
+        element: <Services />
       }
     ]
   },
