@@ -38,3 +38,9 @@
   font-size: 18px;
  }
 
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 8px;
+  }
+}

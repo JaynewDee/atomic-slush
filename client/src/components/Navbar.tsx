@@ -13,7 +13,6 @@ const NavLink = (path: string, activeView: string, viewSetter: any) => {
   >
     {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : path === "recipes" ? "Recipes" : path === "menu" ? "Menu" : "Services"}
   </Link>
-
 }
 
 export const Links = (activeView: string, setActiveView: Dispatch<SetStateAction<string>>) => {

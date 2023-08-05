@@ -131,7 +131,7 @@ export const recipes: RecipeType[] = [
     },
     {
         id: 5,
-        name: "Whiskey & Coke",
+        name: "Whiskey Sour",
         ingredients: [
             {
                 name: "Whiskey",

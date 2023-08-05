@@ -30,6 +30,7 @@ body {
   margin: 5rem auto;
   min-height: 33vh;
   height: 100%;
+  max-width: 1080px;
 }
 
 .page-container > * {
