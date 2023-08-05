@@ -11,12 +11,12 @@ const NavLink = (path: string, activeView: string, viewSetter: any) => {
     data-active={path === activeView}
     onClick={() => viewSetter(path)}
   >
-    {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : path === "recipes" ? "Recipes" : path === "menu" ? "Menu" : "Services"}
+    {path === "about" ? "Who We Are" : path === "quote" ? "Book With Us" : path === "recipes" ? "Recipes" : path === "menu" ? "Menu" : "Important"}
   </Link>
 }
 
 export const Links = (activeView: string, setActiveView: Dispatch<SetStateAction<string>>) => {
-  return ["menu", "services", "quote", "about", "recipes"]
+  return ["menu", "recipes", "important", "quote", "about"]
     .map(path => NavLink(path, activeView, setActiveView))
 }
 

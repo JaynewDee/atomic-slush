@@ -40,7 +40,7 @@ const router = createBrowserRouter([
         element: <Menu />
       },
       {
-        path: "/services",
+        path: "/important",
         element: <Services />
       }
     ]
