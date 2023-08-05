@@ -30,6 +30,7 @@ const RecipeNav = ({ active, setActive }: any) => {
 
 export const Recipes = () => {
   const [active, setActive] = useState("Classic Margarita")
+
   return (
     <>
       <article className="recipes-container">

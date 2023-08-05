@@ -2,24 +2,7 @@ import { useState, useEffect } from 'react'
 import "./dropdown.css"
 import Social from './Social'
 import { Links, NavProps } from './Navbar'
-
-
-const motion = ".33s ease 0s 1 normal forwards"
-
-const { top, mid, bot } = {
-  top: {
-    expand: { animation: `top-expand ${motion}` },
-    collapse: { animation: `top-collapse ${motion}` }
-  },
-  mid: {
-    expand: { animation: `mid-expand ${motion}` },
-    collapse: { animation: `mid-collapse ${motion}` }
-  },
-  bot: {
-    expand: { animation: `bot-expand ${motion}` },
-    collapse: { animation: `bot-collapse ${motion}` }
-  }
-}
+import Hamburger from 'hamburger-react'
 
 export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
   const [menuState, setMenuState] = useState(false);
@@ -39,14 +22,11 @@ export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
     return () => document.removeEventListener('click', handleClickOff)
   }, [])
 
-  const toggleMenu = () => setMenuState(prev => !prev)
-
   return <>
-    <button className="dropdown-toggle-btn" type="button" onClick={toggleMenu}>
-      <div className="burger-line" data-state={menuState ? "expanded" : "collapsed"} id="burger-line-top" style={menuState ? top.expand : top.collapse} />
-      <div className="burger-line" id="burger-line-mid" style={menuState ? mid.expand : mid.collapse} />
-      <div className="burger-line" id="burger-line-bot" style={menuState ? bot.expand : bot.collapse} />
-    </button>
+    <div className="burger-dropdown-btn">
+      <Hamburger size={24} toggled={menuState} toggle={setMenuState} label={"show menu"} rounded />
+    </div>
+
     <div className="burger-menu-container" style={menuState ? { width: "225px", fontSize: "1.33rem" } : { width: "0", fontSize: "0rem" }}>
       {menuState ?
         <>

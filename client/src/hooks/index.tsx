@@ -9,6 +9,7 @@ export function useIsVisible(ref: MutableRefObject<HTMLDivElement>) {
         }, { threshold: 1 });
 
         ref.current && observer.observe(ref.current);
+
         return () => {
             observer.disconnect();
         };

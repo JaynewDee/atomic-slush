@@ -1,8 +1,9 @@
 .about-section {
   text-align: center;
   font-family: var(--caveat);
-  margin: 6rem 6rem 12rem;
+  margin: 6rem auto 12rem;
   min-height: 33dvh;
+  max-width: 768px;
 }
 
 .about-section-header {
@@ -23,6 +24,9 @@
   border: none;
 }
 
+.decorative-icon {
+  margin: 1rem auto;
+}
 .about-section-content {
   font-size: 1.66rem;
 }
@@ -44,9 +48,10 @@
 
 .images-container {
   font-size: 1.66rem;
-  margin: 13rem auto;
+  margin: 3rem auto;
   border: 1px solid white;
   width: 50%;
+  
 }
 
 .machine-section>p {
@@ -59,30 +64,11 @@
 
 
 @media screen and (max-width: 768px) {
-  .about-nav {
-    flex-flow: column nowrap;
-  }
 
-  .about-nav>a {
-    flex-flow: row-reverse nowrap;
-    justify-content: space-between;
-    height: 3rem;
-    width: 50%;
-    margin: auto;
-  }
 
-  .about-nav>a>span {
-    margin-top: 0rem;
-  }
 
-  .machine-section {
-    width: 90%;
-  }
 
 
   .about-section-content>p {}
 
-  .about-section {
-    margin: 3rem 1rem 8rem;
-  }
 }

@@ -1,6 +1,5 @@
-.dropdown-toggle-btn {
-  padding: .33rem 1rem;
-  margin-right: 1rem;
+.burger-dropdown-btn {
+  padding: .3rem .5rem;
   z-index: 10;
   right: 0;
   top: 0;
@@ -23,22 +22,18 @@
   box-shadow: 0px 0px 12px 1px rgba(5, 5, 5, .4);
 }
 
-.burger-menu-container .social-links a svg {
-  font-size: 1rem;
-}
-
 #burger-nav-links {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-  margin: 33% 1rem auto;
+  margin: 30% 1rem auto 0;
 }
 
 #burger-nav-links>a {
-  margin-bottom: 1rem;
   transform: unset;
   transition: all .5s;
   color: white;
+  font-size: 90%;
 }
 
 #burger-nav-links a[data-active=true] {
@@ -56,7 +51,7 @@
   display: flex;
   justify-content: center;
   margin: 1rem 0 .5rem;
-  font-size: 1rem;
+  font-size: .8rem;
   padding-top: .5rem;
   border-top: 3px solid var(--rich-purp)
 }
@@ -65,92 +60,4 @@
   display: flex;
   margin: auto .33rem;
   color: white;
-}
-
-.burger-line {
-  width: 20px;
-  margin: 5px;
-  height: 2px;
-  border-radius: 1px;
-  border-top: 3px solid white;
-}
-
-#burger-line-top {
-  border-left: 3px solid white;
-}
-
-@keyframes top-collapse {
-  0% {
-    transform: rotate(-135deg);
-    height: 20px;
-  }
-
-  100% {
-    transform: rotate(0deg);
-    height: 2px;
-  }
-}
-
-@keyframes top-expand {
-  0% {
-    transform: rotate(0deg);
-    height: 2px;
-    margin: 0;
-  }
-
-  100% {
-    transform: rotate(-135deg);
-    height: 20px;
-    margin: 0;
-  }
-}
-
-@keyframes mid-collapse {
-  0% {
-    width: 0px;
-    border: 0px;
-  }
-
-  100% {
-    width: 20px;
-    border: 1px solid white;
-  }
-}
-
-@keyframes mid-expand {
-  0% {
-    width: 20px;
-    border: 1px solid white;
-  }
-
-  100% {
-    width: 0px;
-    border: 0px;
-  }
-}
-
-
-@keyframes bot-collapse {
-  0% {
-    transform: rotate(-135deg);
-    width: 0px;
-  }
-
-  100% {
-    transform: rotate(0deg);
-    width: 20px;
-
-  }
-}
-
-@keyframes bot-expand {
-  0% {
-    transform: rotate(0deg);
-    width: 20px;
-  }
-
-  100% {
-    transform: rotate(-135deg);
-    width: 0px;
-  }
 }

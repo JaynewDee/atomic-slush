@@ -18,7 +18,7 @@
         }
 
         :root {
-            font-size: 18px;
+            font-size: 14px;
             color: white;
             height: 100%;
             overflow: hidden;
@@ -51,8 +51,20 @@
         }
 
         @media screen and (max-width: 768px) {
+
+            input,
+            textarea,
+            select {
+                padding: 0px;
+            }
+
             #tripleseat_embed_form {
                 width: 100%;
+            }
+
+            #tripleseat_embed_form table td {
+                padding: 2px;
+                column-span: 1;
             }
         }
 
@@ -68,7 +80,13 @@
 
         @media screen and (max-width: 920px) {
             #tripleseat_embed_form {
-                padding: 3rem 1rem 3rem 0;
+                padding: 3rem .2rem 3rem 0;
+            }
+
+            input,
+            textarea,
+            select {
+                padding: 3px;
             }
         }
 
@@ -496,7 +514,7 @@
     </style>
 </head>
 
-<body style="background: rgba(35, 35, 35, .9)">
+<body style="background: rgba(25, 25, 25, 1)">
     <script
         src="https://api.tripleseat.com/v1/leads/ts_script.js?lead_form_id=30917&public_key=a55e140c1ba0873ea06a42162c60f820dc2720e1">
     </script>
