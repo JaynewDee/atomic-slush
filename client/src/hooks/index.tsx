@@ -1,4 +1,10 @@
-import { useEffect, useState, MutableRefObject } from "react";
+import {
+  useEffect,
+  useState,
+  MutableRefObject,
+  SetStateAction,
+  Dispatch,
+} from "react";
 
 export function useIsVisible(ref: MutableRefObject<HTMLDivElement>) {
   const [isIntersecting, setIntersecting] = useState(false);
@@ -19,4 +25,20 @@ export function useIsVisible(ref: MutableRefObject<HTMLDivElement>) {
   }, [ref]);
 
   return isIntersecting;
+}
+
+export function useClickOff(setState: Dispatch<SetStateAction<boolean>>, targets: string[]) {
+  useEffect(() => {
+    function handleClickOff(e: any) {
+      const targetClass = e.target.classList[0];
+      
+      if (targets.includes(targetClass)) {
+        setState(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOff);
+
+    return () => document.removeEventListener("click", handleClickOff);
+  }, []);
 }

@@ -1,32 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./dropdown.css";
 import Social from "./Social";
 import { Links, NavProps } from "./Navbar";
 import Hamburger from "hamburger-react";
+import { useClickOff } from "../hooks";
 
 export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
   const [menuState, setMenuState] = useState(false);
 
-  useEffect(() => {
-    function handleClickOff(e: any) {
-      const targetClass = e.target.classList[0];
-      const targetClasses = [
+  const targetClasses = [
         "App",
         "navbar",
         "page-container",
         "tip-top",
         "logo-img",
-      ];
+  ];
 
-      if (targetClasses.includes(targetClass)) {
-        setMenuState(false);
-      }
-    }
-
-    document.addEventListener("click", handleClickOff);
-
-    return () => document.removeEventListener("click", handleClickOff);
-  }, []);
+  useClickOff(setMenuState, targetClasses);
 
   return (
     <>

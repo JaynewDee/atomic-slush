@@ -7,10 +7,12 @@ import Header from "./components/Header/Header";
 function App() {
   const [activeView, setActiveView] = useState("");
 
+  const viewState = { activeView, setActiveView };
+
   return (
     <div className="App">
-      <Header activeView={activeView} setActiveView={setActiveView} />
-      <Navbar activeView={activeView} setActiveView={setActiveView} />
+      <Header {...viewState} />
+      <Navbar {...viewState} />
       <main className="page-container">
         <Outlet />
       </main>
