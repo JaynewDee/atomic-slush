@@ -10,7 +10,6 @@ const Header = ({ activeView, setActiveView }: NavProps) => {
         <Link to={"/"} onClick={() => setActiveView("")}>
           ATOMIC
         </Link>
-
         <Dropdown activeView={activeView} setActiveView={setActiveView} />
       </div>
     </section>

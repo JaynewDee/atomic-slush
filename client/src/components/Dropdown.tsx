@@ -29,7 +29,6 @@ export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
           rounded
         />
       </div>
-
       <div
         className="burger-menu-container"
         style={

@@ -46,16 +46,18 @@ const AboutSection = ({
     </div>
   );
 };
+
 const DecorativeIcon = (Icon: IconType) => (
   <Icon size="2rem" className="decorative-icon" color="white" />
 );
 
-function About() {
+export default function About() {
   const [ref1, _, ref3] = [
     useRef<HTMLDivElement | any>(),
     useRef<HTMLDivElement | any>(),
     useRef<HTMLDivElement | any>(),
   ];
+
   const [is1Visible, is3Visible] = [useIsVisible(ref1), useIsVisible(ref3)];
 
   return (
@@ -71,7 +73,6 @@ function About() {
           ingredients in our customizable frozen drinks sets us apart from the
           rest.
         </p>
-
         {DecorativeIcon(FruitBowl)}
         <p>
           Our expertly crafted cocktail recipes, curated over 15 years of
@@ -114,8 +115,6 @@ function About() {
           convenience.
         </p>
       </AboutSection>
-    </div>
+     </div>
   );
 }
-
-export default About;

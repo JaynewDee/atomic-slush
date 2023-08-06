@@ -41,7 +41,7 @@
 }
 
 .nav-links-container a[data-active="true"] {
-  transform: scale(1.1) translateY(-0.5rem);
+  transform: scale(1.13);
   border-left: 7px solid var(--rich-purp);
   border-radius: 15%;
   border-right: 7px solid var(--rich-purp);
@@ -57,7 +57,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
 
   .nav-links-container {

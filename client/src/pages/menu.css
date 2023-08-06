@@ -6,7 +6,3 @@
 .header-pineapple {
   font-size: 2rem;
 }
-
-.page-header > .header-pineapple:nth-child(3) {
-  transform: scaleX(-1);
-}
