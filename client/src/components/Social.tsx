@@ -1,4 +1,4 @@
-import { ImInstagram, ImFacebook, ImTwitter } from "react-icons/im";
+import { ImInstagram, ImFacebook } from "react-icons/im";
 
 const Social = () => {
   return (
@@ -9,9 +9,6 @@ const Social = () => {
       <a href="/" style={{cursor: "not-allowed"}}>
        <ImFacebook size="1rem" className="social-icon" />
       </a>
-      {/* <a href="/">
-        <ImTwitter size="1.2rem" className="social-icon" />
-      </a> */}
     </div>
   );
 };
