@@ -6,14 +6,14 @@ const QuoteForm = () => {
       <iframe src="embed.html" width="100%" height="100%"></iframe>
     </div>
   );
-}
+};
 
 const Quote = () => {
   return (
     <>
       <QuoteForm />
     </>
-  )
-}
+  );
+};
 
-export default Quote
+export default Quote;

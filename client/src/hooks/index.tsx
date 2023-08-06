@@ -1,19 +1,22 @@
-import { useEffect, useState, MutableRefObject } from 'react'
+import { useEffect, useState, MutableRefObject } from "react";
 
 export function useIsVisible(ref: MutableRefObject<HTMLDivElement>) {
-    const [isIntersecting, setIntersecting] = useState(false);
+  const [isIntersecting, setIntersecting] = useState(false);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(([entry]) => {
-            setIntersecting(entry.isIntersecting)
-        }, { threshold: 1 });
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIntersecting(entry.isIntersecting);
+      },
+      { threshold: 1 },
+    );
 
-        ref.current && observer.observe(ref.current);
+    ref.current && observer.observe(ref.current);
 
-        return () => {
-            observer.disconnect();
-        };
-    }, [ref]);
+    return () => {
+      observer.disconnect();
+    };
+  }, [ref]);
 
-    return isIntersecting;
+  return isIntersecting;
 }

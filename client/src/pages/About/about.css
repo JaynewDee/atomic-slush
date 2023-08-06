@@ -14,7 +14,7 @@
   white-space: nowrap;
 }
 
-.about-section-header>span {
+.about-section-header > span {
   padding-bottom: 1rem;
 }
 
@@ -31,7 +31,7 @@
   font-size: 1.66rem;
 }
 
-.about-section-content>p {
+.about-section-content > p {
   width: 80%;
   margin: 1.66rem auto;
 }
@@ -51,24 +51,17 @@
   margin: 3rem auto;
   border: 1px solid white;
   width: 50%;
-  
 }
 
-.machine-section>p {
+.machine-section > p {
   padding: 1rem;
 }
 
-.machine-section>span {
+.machine-section > span {
   color: var(--orange);
 }
 
-
 @media screen and (max-width: 768px) {
-
-
-
-
-
-  .about-section-content>p {}
-
+  .about-section-content > p {
+  }
 }
