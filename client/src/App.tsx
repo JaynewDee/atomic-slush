@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import Header from "./components/Header/Header";
+import Welcome from "./pages/Welcome";
 
 function App() {
   const [activeView, setActiveView] = useState("");
@@ -14,7 +15,7 @@ function App() {
       <Header {...viewState} />
       <Navbar {...viewState} />
       <main className="page-container">
-        <Outlet />
+        {activeView ? <Outlet /> : <Welcome setActiveView={setActiveView} />}
       </main>
     </div>
   );

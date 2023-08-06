@@ -27,11 +27,14 @@ export function useIsVisible(ref: MutableRefObject<HTMLDivElement>) {
   return isIntersecting;
 }
 
-export function useClickOff(setState: Dispatch<SetStateAction<boolean>>, targets: string[]) {
+export function useClickOff(
+  setState: Dispatch<SetStateAction<boolean>>,
+  targets: string[],
+) {
   useEffect(() => {
     function handleClickOff(e: any) {
       const targetClass = e.target.classList[0];
-      
+
       if (targets.includes(targetClass)) {
         setState(false);
       }

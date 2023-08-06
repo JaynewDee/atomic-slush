@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from 'react-router-dom';
 import logoImg from "/asset-1.png";
 import "./navbar.css";
 
@@ -40,9 +40,11 @@ export type NavProps = {
 };
 
 export function Navbar({ activeView, setActiveView }: NavProps) {
+  const navigate = useNavigate();
+
   return (
     <div className="navbar">
-      <img src={logoImg} className="logo-img"></img>
+      <img src={logoImg} className="logo-img" onClick={() => { navigate("/");  setActiveView("")}}></img>
       <div className="nav-links-container">
         {Links(activeView, setActiveView)}
       </div>

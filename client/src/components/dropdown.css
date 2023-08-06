@@ -43,7 +43,7 @@
 
 #burger-nav-links a[data-active="true"]::after {
   content: "<";
-  margin-left: 1rem;
+  margin-left: .5rem;
   color: var(--orange);
 }
 
