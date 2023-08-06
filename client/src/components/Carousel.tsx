@@ -25,7 +25,7 @@ const renderSlides = imageData.map((image) => (
 ));
 
 export default function ImageCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [_, setCurrentIndex] = useState(0);
 
   function handleChange(index: number) {
     setCurrentIndex(index);

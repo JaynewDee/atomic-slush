@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, Outlet, useLoaderData } from "react-router-dom";
 import { RecipeType } from "../../data/recipes";
 import "./recipes.css";
-import Note from "./Note";
 
 const RecipeNav = ({ active, setActive }: any) => {
   const recipes: RecipeType[] = useLoaderData() as RecipeType[];
@@ -48,7 +47,6 @@ export const Recipes = () => {
         <RecipeNav active={active} setActive={setActive} />
         <Outlet />
       </article>
-      <Note />
     </>
   );
 };
