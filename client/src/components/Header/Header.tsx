@@ -7,8 +7,10 @@ const Header = ({ activeView, setActiveView }: NavProps) => {
   return (
     <section className="header-section">
       <div className="tip-top">
-        <Link to={"/"} onClick={() => setActiveView("")}>ATOMIC</Link>
-        
+        <Link to={"/"} onClick={() => setActiveView("")}>
+          ATOMIC
+        </Link>
+
         <Dropdown activeView={activeView} setActiveView={setActiveView} />
       </div>
     </section>

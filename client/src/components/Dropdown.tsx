@@ -9,11 +9,11 @@ export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
   const [menuState, setMenuState] = useState(false);
 
   const targetClasses = [
-        "App",
-        "navbar",
-        "page-container",
-        "tip-top",
-        "logo-img",
+    "App",
+    "navbar",
+    "page-container",
+    "tip-top",
+    "logo-img",
   ];
 
   useClickOff(setMenuState, targetClasses);

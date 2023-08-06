@@ -4,7 +4,7 @@ import App from "./App.tsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { recipes, RecipeType } from "./data/recipes.ts";
-import { About, Quote, Home, Menu, Services } from "./pages";
+import { About, Quote, Menu, Services } from "./pages";
 
 import { RecipesGrid } from "./pages/Recipes/RecipesGrid.tsx";
 
@@ -15,10 +15,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
-      {
-        path: "/home",
-        element: <Home />,
-      },
       {
         path: "/about",
         element: <About />,
