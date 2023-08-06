@@ -12,10 +12,12 @@ a {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .App {
   height: 100%;
+  overflow-x: hidden;
  }
 
 .logo-img {
@@ -45,7 +47,7 @@ body {
   margin: 5rem auto;
   min-height: 33vh;
   height: 100%;
-  /* max-width: 1080px; */
+overflow-x: hidden;
 }
 
 .page-container > * {
@@ -99,4 +101,4 @@ body {
   padding: .2rem 1rem;
   background-color: var(--orange);
   width: 100%;
-}
+ }
