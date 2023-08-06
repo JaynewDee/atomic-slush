@@ -61,3 +61,8 @@
   margin: auto 0.33rem;
   color: white;
 }
+
+.social-icon:nth-child(1):hover {
+  color: var(--orange);
+  transform: scale(1.1);
+}

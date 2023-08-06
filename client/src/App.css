@@ -1,3 +1,7 @@
+* {
+  text-decoration: none;
+}
+
 a {
   color: white;
 }
@@ -12,8 +16,7 @@ body {
 
 .App {
   height: 100%;
-  padding-bottom: 13rem;
-}
+ }
 
 .logo-img {
   height: 330px;
@@ -84,4 +87,16 @@ body {
 
 .image-carousel {
   margin-top: 8rem;
+}
+
+.main-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: auto;
+  padding: .2rem 1rem;
+  background-color: var(--orange);
+  width: 100%;
 }

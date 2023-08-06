@@ -6,12 +6,12 @@ const Social = () => {
       <a href="/">
         <ImInstagram size="1rem" className="social-icon" />
       </a>
-      <a href="/">
-        <ImFacebook size="1rem" className="social-icon" />
+      <a href="/" style={{cursor: "not-allowed"}}>
+       <ImFacebook size="1rem" className="social-icon" />
       </a>
-      <a href="/">
+      {/* <a href="/">
         <ImTwitter size="1.2rem" className="social-icon" />
-      </a>
+      </a> */}
     </div>
   );
 };

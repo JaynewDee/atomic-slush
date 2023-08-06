@@ -13,4 +13,3 @@ ___
 ## Design Goals
 - Modern
 - Fully responsive / portable
-- 

@@ -109,11 +109,11 @@ export default function About() {
           avoids overheating, especially on hot summer days.
         </p>
         {DecorativeIcon(FruitTree)}
-        <p>
+        {/* <p>
           If you require an extension cord, simply indicate it on the Tripleseat
           event form and we will readily provide a complimentary one for your
           convenience.
-        </p>
+        </p> */}
       </AboutSection>
      </div>
   );
