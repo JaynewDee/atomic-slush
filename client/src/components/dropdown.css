@@ -1,11 +1,11 @@
 .burger-dropdown-btn {
-  padding: .3rem .5rem;
+  padding: 0.3rem 0.5rem;
   z-index: 10;
   right: 0;
   top: 0;
   background: none;
   border: none;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .burger-menu-container {
@@ -16,10 +16,10 @@
   top: 0;
   right: 0;
   height: 300px;
-  background-color: rgba(5, 5, 5, .9);
-  transition: all .5s;
+  background-color: rgba(5, 5, 5, 0.9);
+  transition: all 0.5s;
   border-radius: 0 0 0 6px;
-  box-shadow: 0px 0px 12px 1px rgba(5, 5, 5, .4);
+  box-shadow: 0px 0px 12px 1px rgba(5, 5, 5, 0.4);
 }
 
 #burger-nav-links {
@@ -29,35 +29,35 @@
   margin: 30% 1rem auto 0;
 }
 
-#burger-nav-links>a {
+#burger-nav-links > a {
   transform: unset;
-  transition: all .5s;
+  transition: all 0.5s;
   color: white;
   font-size: 90%;
 }
 
-#burger-nav-links a[data-active=true] {
+#burger-nav-links a[data-active="true"] {
   border-left: none;
   border-right: none;
 }
 
-#burger-nav-links a[data-active=true]::after {
+#burger-nav-links a[data-active="true"]::after {
   content: "<";
   margin-left: 1rem;
-  color: var(--orange)
+  color: var(--orange);
 }
 
 .social-links {
   display: flex;
   justify-content: center;
-  margin: 1rem 0 .5rem;
-  font-size: .8rem;
-  padding-top: .5rem;
-  border-top: 3px solid var(--rich-purp)
+  margin: 1rem 0 0.5rem;
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+  border-top: 3px solid var(--rich-purp);
 }
 
-.social-links>a {
+.social-links > a {
   display: flex;
-  margin: auto .33rem;
+  margin: auto 0.33rem;
   color: white;
 }

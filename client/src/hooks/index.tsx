@@ -1,19 +1,44 @@
-import { useEffect, useState, MutableRefObject } from 'react'
+import {
+  useEffect,
+  useState,
+  MutableRefObject,
+  SetStateAction,
+  Dispatch,
+} from "react";
 
 export function useIsVisible(ref: MutableRefObject<HTMLDivElement>) {
-    const [isIntersecting, setIntersecting] = useState(false);
+  const [isIntersecting, setIntersecting] = useState(false);
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(([entry]) => {
-            setIntersecting(entry.isIntersecting)
-        }, { threshold: 1 });
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIntersecting(entry.isIntersecting);
+      },
+      { threshold: 1 },
+    );
 
-        ref.current && observer.observe(ref.current);
+    ref.current && observer.observe(ref.current);
 
-        return () => {
-            observer.disconnect();
-        };
-    }, [ref]);
+    return () => {
+      observer.disconnect();
+    };
+  }, [ref]);
 
-    return isIntersecting;
+  return isIntersecting;
+}
+
+export function useClickOff(setState: Dispatch<SetStateAction<boolean>>, targets: string[]) {
+  useEffect(() => {
+    function handleClickOff(e: any) {
+      const targetClass = e.target.classList[0];
+      
+      if (targets.includes(targetClass)) {
+        setState(false);
+      }
+    }
+
+    document.addEventListener("click", handleClickOff);
+
+    return () => document.removeEventListener("click", handleClickOff);
+  }, []);
 }

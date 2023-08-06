@@ -1,15 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import './index.css'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import { recipes, RecipeType } from './data/recipes.ts';
-import { About, Quote, Home, Menu, Services } from './pages';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.tsx";
+import "./index.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { recipes, RecipeType } from "./data/recipes.ts";
+import { About, Quote, Home, Menu, Services } from "./pages";
 
-import { RecipesGrid } from "./pages/Recipes/RecipesGrid.tsx"
+import { RecipesGrid } from "./pages/Recipes/RecipesGrid.tsx";
 
 const recipesLoader = (): RecipeType[] => recipes;
 
@@ -33,24 +30,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/quote",
-        element: <Quote />
+        element: <Quote />,
       },
       {
         path: "/menu",
-        element: <Menu />
+        element: <Menu />,
       },
       {
         path: "/important",
-        element: <Services />
-      }
-    ]
+        element: <Services />,
+      },
+    ],
   },
-])
+]);
 
-
-
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);
