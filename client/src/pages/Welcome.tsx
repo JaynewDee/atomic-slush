@@ -11,7 +11,7 @@ export default function Welcome({ setActiveView }: WelcomeProps) {
 
   return (
     <article className="welcome-page">
-      <header className="page-header" style={{ marginBottom: "2rem" }}>
+      <header className="page-header" style={{ margin: "2rem auto 3rem" }}>
         <h3>WELCOME</h3>
       </header>
       <section
@@ -33,7 +33,7 @@ export default function Welcome({ setActiveView }: WelcomeProps) {
         <h4 className="welcome-section-header">GET A QUOTE</h4>
       </section>
       <section
-        className="welcome-section"
+        className="welcome-section book-now-section"
         onClick={() => {
           window.open(
             "https://portal.tripleseat.com/direct_bookings/qnbd70wegy3",

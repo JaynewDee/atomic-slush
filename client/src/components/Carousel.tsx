@@ -46,8 +46,8 @@ export default function ImageCarousel() {
 
   return (
     <div className="image-carousel">
-      <header className="page-header" style={{ marginBottom: "2rem" }}>
-        <h3>IMAGES</h3>
+      <header className="page-header" style={{ marginBottom: "1rem" }}>
+        <h3 style={{ fontSize: "1.5rem"}}>IMAGES</h3>
       </header>
       <Carousel
         showArrows={true}

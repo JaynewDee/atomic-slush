@@ -45,7 +45,7 @@ body {
 }
 
 .page-container {
-  margin: 5rem auto;
+  margin: 2rem auto 8rem;
   min-height: 33vh;
   height: 100%;
   overflow-x: hidden;
@@ -81,7 +81,8 @@ body {
   background-color: var(--ocean);
 }
 .welcome-section:nth-child(4) {
-  background-color: var(--orange);
+  background-color: white;
+  color: var(--orange);
 }
 .welcome-section-header {
   text-align: center;

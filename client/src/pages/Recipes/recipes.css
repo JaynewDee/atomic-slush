@@ -85,8 +85,8 @@
   align-items: center;
   padding: .3rem;
   font-size: 1.3rem;
-  background: white;
-  color: var(--ocean)
+  background: var(--ocean);
+  color:white 
 }
 
 h3.header-row {
