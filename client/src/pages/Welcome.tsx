@@ -11,7 +11,7 @@ export default function Welcome({ setActiveView }: WelcomeProps) {
 
   return (
     <article className="welcome-page">
-      <header className="page-header" style={{ marginBottom: "5rem" }}>
+      <header className="page-header" style={{ marginBottom: "2rem" }}>
         <h3>WELCOME</h3>
       </header>
       <section
