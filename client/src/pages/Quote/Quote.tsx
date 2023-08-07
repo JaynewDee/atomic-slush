@@ -1,5 +1,4 @@
 import "./quote.css";
-import { GiPalmTree as PalmTree } from "react-icons/gi";
 
 const LeadForm = () => {
   return (
