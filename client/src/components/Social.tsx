@@ -6,8 +6,8 @@ const Social = () => {
       <a href="/">
         <ImInstagram size="1rem" className="social-icon" />
       </a>
-      <a href="/" style={{cursor: "not-allowed"}}>
-       <ImFacebook size="1rem" className="social-icon" />
+      <a href="/" style={{ cursor: "not-allowed" }}>
+        <ImFacebook size="1rem" className="social-icon" />
       </a>
     </div>
   );

@@ -135,15 +135,15 @@ export const recipes: RecipeType[] = [
     ingredients: [
       {
         name: "Whiskey",
-        volume_liters: 3,
+        volume_liters: 3.5,
       },
       {
-        name: "Coke",
-        volume_liters: 1,
+        name: "Lemon",
+        volume_liters: 1.25,
       },
       {
-        name: "Lime",
-        volume_liters: 1,
+        name: "Simple Syrup",
+        volume_liters: 1.25,
       },
       {
         name: "Water",

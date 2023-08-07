@@ -6,30 +6,28 @@ const imageData = [
   {
     label: "Single-Headed",
     alt: "image1",
-    url:
-      "./machine1.jpg"
+    url: "./machine1.jpg",
   },
   {
     label: "Double-Headed",
     alt: "image2",
-    url:
-      "./machine2.jpg"
+    url: "./machine2.jpg",
   },
   {
     label: "Spread",
     alt: "fresh fruits and frozen cocktail machines",
-    url: "./machine3.jpg"
+    url: "./machine3.jpg",
   },
   {
     label: "Spread Close-Up",
     alt: "fresh tropical and citrus fruits close-up",
-    url: "./machine4.jpg"
+    url: "./machine4.jpg",
   },
   {
     label: "Spread",
     alt: "cocktail slushie machines framed by varieties of fresh fruit and kitchen tools",
-    url: "./machine6.jpg"
-  }
+    url: "./machine6.jpg",
+  },
 ];
 
 const renderSlides = imageData.map((image) => (

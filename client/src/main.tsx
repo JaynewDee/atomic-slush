@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { recipes, RecipeType } from "./data/recipes.ts";
 import { About, Quote, Menu, Services, RecipesGrid } from "./pages";
 
-import {  } from "./pages/Recipes/RecipesGrid.tsx";
+import {} from "./pages/Recipes/RecipesGrid.tsx";
 
 const recipesLoader = (): RecipeType[] => recipes;
 
