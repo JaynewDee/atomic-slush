@@ -28,12 +28,12 @@
   align-items: center;
   font-size: 1.2rem;
   height: 33%;
-  width: 8rem;
+  width: 9rem;
   filter: drop-shadow(0 1px 1px rgba(25, 25, 25, 0.31));
   top: 0;
   border-left: 3px solid var(--rich-purp);
-  border-radius: 15%;
   border-right: 3px solid var(--rich-purp);
+  border-radius: 15%;
   margin: 1rem;
   transition: all 0.2s;
   color: white;
@@ -41,10 +41,11 @@
 }
 
 .nav-links-container a[data-active="true"] {
-  transform: scale(1.13);
-  border-left: 7px solid var(--rich-purp);
-  border-radius: 15%;
-  border-right: 7px solid var(--rich-purp);
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  border-left: 5px solid var(--rich-purp);
+  border-radius: 20%;
+  border-right: 5px solid var(--rich-purp);
 }
 
 .nav-links-container > a:hover {
