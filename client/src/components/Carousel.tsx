@@ -46,7 +46,7 @@ export default function ImageCarousel() {
 
   return (
     <div className="image-carousel">
-      <header className="page-header" style={{ marginBottom: "5rem" }}>
+      <header className="page-header" style={{ marginBottom: "2rem" }}>
         <h3>IMAGES</h3>
       </header>
       <Carousel

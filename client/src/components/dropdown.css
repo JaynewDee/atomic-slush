@@ -27,13 +27,15 @@
   flex-flow: column nowrap;
   align-items: flex-end;
   margin: 30% 1rem auto 0;
+  transform: translateX(225px);
+  transition: all 1s;
 }
 
 #burger-nav-links > a {
   transform: unset;
   transition: all 0.5s;
   color: white;
-  font-size: 90%;
+  font-size: 110%;
 }
 
 #burger-nav-links a[data-active="true"] {
@@ -62,7 +64,7 @@
   color: white;
 }
 
-.social-icon:nth-child(1):hover {
-  color: var(--orange);
-  transform: scale(1.1);
+.social-icon[data-state="active"]:hover {
+   color: var(--orange);
+  transform: scale(1.1); 
 }

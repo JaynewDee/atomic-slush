@@ -33,18 +33,14 @@ export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
         className="burger-menu-container"
         style={
           menuState
-            ? { width: "225px", fontSize: "1.33rem" }
-            : { width: "0", fontSize: "0rem" }
+            ? { width: "225px" }
+            : { width: "0" }
         }
       >
-        {menuState ? (
           <>
-            <nav id="burger-nav-links">{Links(activeView, setActiveView)}</nav>
+            <nav style={ menuState ? { transform: "translateX(0px)"} : {transform: "translateX(225px)"}} id="burger-nav-links">{Links(activeView, setActiveView)}</nav>
             <Social />
           </>
-        ) : (
-          <></>
-        )}
       </div>
     </>
   );
