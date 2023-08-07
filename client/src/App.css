@@ -105,4 +105,9 @@ body {
   /* background-color: var(--rich-purp); */
   border: 2px solid var(--ocean);
   width: 300px;
+  background: rgba(10, 10, 10, .8)
  }
+
+.main-footer > p {
+  margin: 0 auto;
+}
