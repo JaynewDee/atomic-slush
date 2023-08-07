@@ -76,14 +76,17 @@
   width: 40%;
   margin: 0.3rem auto;
   line-height: 1.2;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-  border-radius: 20%;
+  /* border-left: 3px solid black;
+  border-right: 3px solid black; */
+  border-radius: 3px;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem;
+  padding: .3rem;
+  font-size: 1.3rem;
+  background: white;
+  color: var(--ocean)
 }
 
 h3.header-row {
