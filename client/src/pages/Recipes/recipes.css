@@ -31,7 +31,6 @@
   width: 90%;
   max-width: 1280px;
   margin: 5rem auto 21rem;
-  font-size: 1.66rem;
   font-family: var(--caveat);
 }
 
@@ -50,7 +49,7 @@
   box-shadow: 0px 0px 13px 5px rgba(25, 25, 25, 1);
   overflow-y: hidden;
   position: relative;
-  background: rgba(25, 25, 25, .95)
+  background: rgba(15, 15, 15, .7)
 }
 
 .recipe-name,
@@ -60,7 +59,7 @@
 }
 
 .recipe-name {
-  margin-top: 80px;
+  margin-top: 90px;
   margin-bottom: 130px;
   color: var(--ocean);
   text-align: center;
@@ -77,13 +76,14 @@
   width: 40%;
   margin: 0.3rem auto;
   line-height: 1.2;
-  border-left: 3px solid white;
-  border-right: 3px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   border-radius: 20%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: .5rem;
 }
 
 h3.header-row {

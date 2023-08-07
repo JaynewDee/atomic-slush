@@ -17,8 +17,9 @@ function PdfDisplay({ src }: {src: string}) {
       </article>
         :
         <div className="mobile-pdf-options"> 
-          <a href="./menu.pdf" target="_blank" className="open-link">VIEW</a> 
-          <a href="./menu.pdf" download="atomic_menu" target="_blank" className="download-link">DOWNLOAD</a> 
+          { src === "./terms.pdf" && <h4 className="terms-header">Terms & Conditions</h4>}
+          <a href={src} target="_blank" className="open-link">VIEW</a> 
+          <a href={src} download="atomic_menu" target="_blank" className="download-link">DOWNLOAD</a> 
         </div>
     }
     </>
