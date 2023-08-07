@@ -1,7 +1,7 @@
 .about-section {
   text-align: center;
   font-family: var(--caveat);
-  margin: 6rem auto 12rem;
+  margin: 3rem auto 12rem;
   min-height: 33dvh;
   max-width: 768px;
 }
@@ -20,7 +20,7 @@
 
 .section-divider {
   background-color: var(--rich-purp);
-  height: 5px;
+  height: 3px;
   border: none;
 }
 
