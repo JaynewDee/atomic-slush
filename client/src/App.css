@@ -98,7 +98,8 @@ body {
   align-items: center;
   position: absolute;
   margin-top: auto;
-  padding: 0.2rem 1rem;
+  padding: 0.3rem 1rem;
   background-color: var(--orange);
   width: 100%;
-}
+
+ }
