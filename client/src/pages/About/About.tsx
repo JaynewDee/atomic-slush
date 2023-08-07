@@ -115,6 +115,6 @@ export default function About() {
           convenience.
         </p> */}
       </AboutSection>
-     </div>
+    </div>
   );
 }

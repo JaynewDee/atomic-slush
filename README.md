@@ -13,3 +13,4 @@ ___
 ## Design Goals
 - Modern
 - Fully responsive / portable
+- Minimal dependencies / build size
