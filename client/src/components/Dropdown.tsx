@@ -44,7 +44,7 @@ export const Dropdown = ({ activeView, setActiveView }: NavProps) => {
           >
             {Links(activeView, setActiveView)}
           </nav>
-          <Social />
+          <Social menuState={menuState } />
         </>
       </div>
     </>
