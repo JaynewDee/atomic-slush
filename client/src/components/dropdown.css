@@ -70,3 +70,9 @@
   color: var(--orange);
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 768px) {
+  .burger-dropdown-btn {
+    padding-bottom: 0;
+  }
+}
