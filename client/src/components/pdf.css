@@ -1,3 +1,37 @@
 .full-pdf-container {
   margin-top: 5rem;
 }
+
+.mobile-pdf-options {
+  margin-top: 5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-pdf-options > a {
+  font-size: 2.5rem;
+  filter: drop-shadow(-3px -3px 8px 8px black);
+  width: 100%;
+  text-align: center;
+  transition: all .3s
+}
+
+.open-link {
+  background: var(--ocean)
+}
+
+.open-link:hover {
+  background: white;
+  color: var(--ocean)
+}
+
+.download-link {
+  background: var(--rich-purp)
+}
+
+.download-link:hover {
+  background: white;
+  color: var(--rich-purp)
+}

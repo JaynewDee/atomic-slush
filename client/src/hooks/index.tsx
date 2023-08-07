@@ -45,3 +45,19 @@ export function useClickOff(
     return () => document.removeEventListener("click", handleClickOff);
   }, []);
 }
+
+export function useViewportQuery(initWidth: number, initHeight: number) {
+  const [dimensions, setDimensions] = useState([initWidth, initHeight])
+
+  useEffect(() => {
+    function handleResize(_: any) {
+      setDimensions([window.innerWidth, window.innerHeight]) 
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  return dimensions;
+}

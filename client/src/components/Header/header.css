@@ -24,6 +24,7 @@
 
 @media screen and (max-width: 768px) {
   .tip-top > a {
-    margin-bottom: .33rem 
+    margin-bottom: .33rem;
+    margin-left: 1rem; 
   }
 }
