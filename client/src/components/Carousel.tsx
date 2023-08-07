@@ -14,6 +14,21 @@ const imageData = [
     alt: "image2",
     url:
       "./machine2.jpg"
+  },
+  {
+    label: "Spread",
+    alt: "fresh fruits and frozen cocktail machines",
+    url: "./machine3.jpg"
+  },
+  {
+    label: "Spread Close-Up",
+    alt: "fresh tropical and citrus fruits close-up",
+    url: "./machine4.jpg"
+  },
+  {
+    label: "Spread",
+    alt: "cocktail slushie machines framed by varieties of fresh fruit and kitchen tools",
+    url: "./machine6.jpg"
   }
 ];
 
