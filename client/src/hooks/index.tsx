@@ -46,11 +46,11 @@ export function useClickOff(
   }, []);
 }
 
-export function useViewportQuery(initWidth: number, initHeight: number) {
-  const [dimensions, setDimensions] = useState([initWidth, initHeight])
+export function useViewportQuery() {
+  const [dimensions, setDimensions] = useState([window.innerWidth, window.innerHeight])
 
   useEffect(() => {
-    function handleResize(_: any) {
+    function handleResize(_: UIEvent) {
       setDimensions([window.innerWidth, window.innerHeight]) 
     }
 

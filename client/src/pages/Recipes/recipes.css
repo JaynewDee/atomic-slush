@@ -114,5 +114,7 @@ h3.header-row {
   }
   .recipe-cell {
     width: 80vw;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 }

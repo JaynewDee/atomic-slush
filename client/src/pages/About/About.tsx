@@ -52,13 +52,13 @@ const DecorativeIcon = (Icon: IconType) => (
 );
 
 export default function About() {
-  const [ref1, _, ref3] = [
+  const [ref1, ref2, ref3] = [
     useRef<HTMLDivElement | any>(),
     useRef<HTMLDivElement | any>(),
     useRef<HTMLDivElement | any>(),
   ];
 
-  const [is1Visible, is3Visible] = [useIsVisible(ref1), useIsVisible(ref3)];
+  const [is1Visible, is2Visible, is3Visible] = [useIsVisible(ref1), useIsVisible(ref2), useIsVisible(ref3)];
 
   return (
     <div className="about-page">
@@ -93,8 +93,8 @@ export default function About() {
       </AboutSection>
       <hr className="section-divider" />
       <AboutSection
-        reference={ref3}
-        visibility={is3Visible}
+        reference={ref2}
+        visibility={is2Visible}
         sectionTitle="Our Machines"
       >
         <p>
@@ -109,11 +109,24 @@ export default function About() {
           avoids overheating, especially on hot summer days.
         </p>
         {DecorativeIcon(FruitTree)}
-        {/* <p>
-          If you require an extension cord, simply indicate it on the Tripleseat
-          event form and we will readily provide a complimentary one for your
-          convenience.
-        </p> */}
+      </AboutSection>
+      <hr className="section-divider" />
+      <AboutSection
+        reference={ref3}
+        visibility={is3Visible}
+        sectionTitle="Our Mixes"
+      >
+        <p>
+         The distinguishing factor of our products is our exclusive blends. We craft our mixes from scratch, utilizing only the freshest ingredients to guarantee the highest quality for your exceptional event. 
+        </p>
+        {DecorativeIcon(FruitBowl)}
+        <p>
+         Our pledge to utilize wholesome components arises from the increasing awareness of what we consume and the need to steer clear of any harmful dyes and processed sugars. 
+        </p>
+        {DecorativeIcon(FruitTree)}
+        <p>
+          We are committed to providing exceptional products and building a well-known brand that is known for our exceptional blends. Our dedication to this mission is unwavering.
+        </p>
       </AboutSection>
     </div>
   );

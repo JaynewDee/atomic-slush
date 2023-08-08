@@ -26,7 +26,7 @@ export const recipes: RecipeType[] = [
         volume_liters: 1.5,
       },
       {
-        name: "Sugar",
+        name: "Simple Syrup",
         volume_liters: 1.5,
       },
       {
@@ -131,7 +131,7 @@ export const recipes: RecipeType[] = [
   },
   {
     id: 5,
-    name: "Whiskey Sour",
+    name: "Whiskey Smash",
     ingredients: [
       {
         name: "Whiskey",
@@ -142,7 +142,7 @@ export const recipes: RecipeType[] = [
         volume_liters: 1.25,
       },
       {
-        name: "Simple Syrup",
+        name: "Mint Syrup",
         volume_liters: 1.25,
       },
       {

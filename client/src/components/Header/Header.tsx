@@ -8,7 +8,7 @@ const Header = ({ activeView, setActiveView }: NavProps) => {
     <section className="header-section">
       <div className="tip-top">
         <Link to={"/"} onClick={() => setActiveView("")}>
-          ATOMIC
+          ATOMIC SLUSH
         </Link>
         <Dropdown activeView={activeView} setActiveView={setActiveView} />
       </div>
