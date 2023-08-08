@@ -2,7 +2,7 @@ import { useViewportQuery } from "../hooks";
 import "./pdf.css";
 
 function PdfDisplay({ src }: {src: string}) {
-  const [width, _] = useViewportQuery(window.innerWidth, window.innerHeight);
+  const [width, _] = useViewportQuery();
  
   return (
     <>
