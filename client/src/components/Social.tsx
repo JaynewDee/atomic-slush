@@ -10,8 +10,8 @@ const Social = ({ menuState }: { menuState: boolean }) => {
       <a href="https://instagram.com/atomic_slush_dfw" target="_blank">
         <ImInstagram size="1rem" className="social-icon" data-state="active" />
       </a>
-      <a href="/" style={{ cursor: "not-allowed" }}>
-        <ImFacebook size="1rem" className="social-icon" data-state="inactive" />
+      <a href="https://www.facebook.com/atomicslush" target="_blank">
+        <ImFacebook size="1rem" className="social-icon" data-state="active" />
       </a>
     </div>
   );
