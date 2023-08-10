@@ -47,11 +47,12 @@ export function Navbar({ activeView, setActiveView }: NavProps) {
       <img
         src={logoImg}
         className="logo-img"
+        alt="The atomic slush official business logo is a playfully decorated blue and purple atom bomb with the company name, Atomic Slush, written across the bomb's face."
         onClick={() => {
           navigate("/");
           setActiveView("");
         }}
-      ></img>
+     /> 
       <div className="nav-links-container">
         {Links(activeView, setActiveView)}
       </div>
