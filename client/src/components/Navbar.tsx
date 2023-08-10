@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logoImg from "/asset-1.png";
+import logoImg from "/atomicslush.png";
 import "./navbar.css";
 
 const NavLink = (path: string, activeView: string, viewSetter: any) => {
