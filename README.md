@@ -14,3 +14,5 @@ ___
 - Modern
 - Fully responsive / portable
 - Minimal dependencies / build size
+
+![Lighthouse Performance Report](./docs/lighthouse.png)
