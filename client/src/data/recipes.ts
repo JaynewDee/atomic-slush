@@ -170,11 +170,7 @@ export const recipes: RecipeType[] = [
       {
         name: "Simple Syrup",
         volume_liters: 1.4,
-      }, 
-      {
-        name: "Water",
-        volume_liters: 1.4,
-      },
+      } 
     ],
     frozen: true,
   },
