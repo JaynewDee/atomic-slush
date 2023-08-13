@@ -154,14 +154,10 @@ export const recipes: RecipeType[] = [
   },
   {
     id: 6,
-    name: "Cosmo",
+    name: "Moscow Mule",
     ingredients: [
       {
         name: "Vodka",
-        volume_liters: 1.4,
-      },
-      {
-        name: "Orange Liqueur",
         volume_liters: 1.4,
       },
       {
@@ -169,17 +165,12 @@ export const recipes: RecipeType[] = [
         volume_liters: 1,
       },
       {
-        name: "Orange",
-        volume_liters: 0.7,
+        name: "Ginger Beer",
       },
       {
         name: "Simple Syrup",
         volume_liters: 1.4,
-      },
-      {
-        name: "Cranberry",
-        volume_liters: 2.06,
-      },
+      }, 
       {
         name: "Water",
         volume_liters: 1.4,
