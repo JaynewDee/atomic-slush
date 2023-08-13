@@ -1,15 +1,3 @@
-#embedded-form-frame {
-  margin: auto;
-  width: 100%;
-  height: 130rem;
-  overflow-y: auto;
+ #embedded-form-frame {
   overflow-x: hidden;
-}
-
-@media screen and (max-width: 920px) {
-  #embedded-form-frame {
-  }
-
-  #embedded-form-frame > * {
-  }
 }
