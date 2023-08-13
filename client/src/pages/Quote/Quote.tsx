@@ -3,7 +3,7 @@ import "./quote.css";
 const LeadForm = () => {
   return (
     <div id="embedded-form-frame">
-      <iframe src="embed.html" width="100%" height="100%"></iframe>
+      <iframe src="embed.html" width="100%" height="1800px"></iframe>
     </div>
   );
 };

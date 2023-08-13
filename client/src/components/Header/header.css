@@ -22,7 +22,13 @@
 
 @media screen and (max-width: 768px) {
   .tip-top > a {
-    margin-bottom: .33rem;
+    font-size: 1.33rem; 
+    width: 6rem;
+    text-align:center;
     margin-left: 1rem; 
+  }
+
+  .tip-top {
+    height: 3.5rem;
   }
 }
