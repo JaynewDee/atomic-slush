@@ -28,7 +28,23 @@ const imageData = [
     alt: "cocktail slushie machines framed by varieties of fresh fruit and kitchen tools",
     url: "./machine6.jpg",
   },
+  {
+    label: "Daniel Crushing it",
+    alt: "Atomic slush business owner serves fresh frozen cocktails with a big smile",
+    url: "./danny1.jpg"
+  },
+  {
+    label: "Gym event rearview",
+    alt: "Atomic slush owner Daniel serves fresh frozen drinks to guests of gym event",
+    url: "./gym-event1.jpg"
+  },
+  {
+    label: "Gym event setup",
+    alt: "Front-facing view of full frozen machine setup including purees and garnishes",
+    url: "./gym-event2.jpg"
+  }
 ];
+
 
 const renderSlides = imageData.map((image) => (
   <div key={image.alt}>
@@ -47,7 +63,7 @@ export default function ImageCarousel() {
   return (
     <div className="image-carousel">
       <header className="page-header" style={{ marginBottom: "1rem" }}>
-        <h3 style={{ fontSize: "1.5rem"}}>IMAGES</h3>
+        <h3 style={{ fontSize: "1.5rem" }}>IMAGES</h3>
       </header>
       <Carousel
         showArrows={true}
