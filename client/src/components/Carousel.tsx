@@ -1,8 +1,17 @@
-import { useState } from "react";
+import { Suspense, lazy, startTransition, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-const imageData = [
+const CarouselImage = lazy(() => import("./ImageItem"))
+
+export interface ImageItem {
+  label: string,
+  alt: string,
+  url: string
+}
+
+
+const imageData: ImageItem[] = [
   {
     label: "Single-Headed",
     alt: "image1",
@@ -46,18 +55,16 @@ const imageData = [
 ];
 
 
-const renderSlides = imageData.map((image) => (
-  <div key={image.alt}>
-    <img src={image.url} alt={image.alt} />
-    <p className="legend">{image.label}</p>
-  </div>
-));
+
+const renderSlides = imageData.map((image) => <CarouselImage image={image} />);
 
 export default function ImageCarousel() {
   const [_, setCurrentIndex] = useState(0);
 
   function handleChange(index: number) {
-    setCurrentIndex(index);
+    startTransition(() => {
+      setCurrentIndex(index);
+    })
   }
 
   return (
@@ -65,16 +72,17 @@ export default function ImageCarousel() {
       <header className="page-header" style={{ marginBottom: "1rem" }}>
         <h3 style={{ fontSize: "1.5rem" }}>IMAGES</h3>
       </header>
-      <Carousel
-        showArrows={true}
-        autoPlay={true}
-        infiniteLoop={true}
-        // selectedItem={imageData[currentIndex] as any}
-        onChange={handleChange}
-        className="carousel-container"
-      >
-        {renderSlides}
-      </Carousel>
+      <Suspense fallback={<div>Loading Images ...</div>}>
+        <Carousel
+          showArrows={true}
+          autoPlay={true}
+          infiniteLoop={true}
+          onChange={handleChange}
+          className="carousel-container"
+        >
+          {renderSlides}
+        </Carousel>
+      </Suspense>
     </div>
   );
 }
