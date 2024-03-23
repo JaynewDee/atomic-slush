@@ -129,29 +129,29 @@ export const recipes: RecipeType[] = [
     ],
     frozen: true,
   },
-  {
-    id: 5,
-    name: "Whiskey Smash",
-    ingredients: [
-      {
-        name: "Whiskey",
-        volume_liters: 3.5,
-      },
-      {
-        name: "Lemon",
-        volume_liters: 1.25,
-      },
-      {
-        name: "Mint Syrup",
-        volume_liters: 1.25,
-      },
-      {
-        name: "Water",
-        volume_liters: 5,
-      },
-    ],
-    frozen: true,
-  },
+  // {
+  //   id: 5,
+  //   name: "Whiskey Smash",
+  //   ingredients: [
+  //     {
+  //       name: "Whiskey",
+  //       volume_liters: 3.5,
+  //     },
+  //     {
+  //       name: "Lemon",
+  //       volume_liters: 1.25,
+  //     },
+  //     {
+  //       name: "Mint Syrup",
+  //       volume_liters: 1.25,
+  //     },
+  //     {
+  //       name: "Water",
+  //       volume_liters: 5,
+  //     },
+  //   ],
+  //   frozen: true,
+  // },
   {
     id: 6,
     name: "Moscow Mule",
@@ -170,7 +170,7 @@ export const recipes: RecipeType[] = [
       {
         name: "Simple Syrup",
         volume_liters: 1.4,
-      } 
+      }
     ],
     frozen: true,
   },
