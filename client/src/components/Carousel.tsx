@@ -10,7 +10,6 @@ export interface ImageItem {
   url: string
 }
 
-
 const imageData: ImageItem[] = [
   {
     label: "Single-Headed",
@@ -54,9 +53,7 @@ const imageData: ImageItem[] = [
   }
 ];
 
-
-
-const renderSlides = imageData.map((image) => <CarouselImage image={image} />);
+const renderSlides = imageData.map((image) => <CarouselImage image={image} key={image.label} />);
 
 export default function ImageCarousel() {
   const [_, setCurrentIndex] = useState(0);
@@ -79,6 +76,7 @@ export default function ImageCarousel() {
           infiniteLoop={true}
           onChange={handleChange}
           className="carousel-container"
+          showThumbs={false}
         >
           {renderSlides}
         </Carousel>
