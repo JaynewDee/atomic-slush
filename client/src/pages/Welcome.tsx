@@ -26,16 +26,6 @@ export default function Welcome({ setActiveView }: WelcomeProps) {
           setActiveView('quote');
           navigate('/quote');
         }} />
-      <WelcomeSection
-        headerText="BOOK NOW"
-        onClick={() => {
-          window.open(
-            "https://portal.tripleseat.com/direct_bookings/qnbd70wegy3",
-            "_blank",
-          );
-        }}
-        className="welcome-section book-now-section"
-      />
       <ImageCarousel />
     </article>
   );
